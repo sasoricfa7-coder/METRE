@@ -1,0 +1,42 @@
+name: Transcrire le cours
+
+on:
+  push:
+    paths:
+      - "scans/**"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: transcription
+  cancel-in-progress: false
+
+jobs:
+  transcrire:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Lire les pages avec Gemini
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python traiter.py
+
+      # always() : même si une page échoue, on garde les pages déjà réussies
+      - name: Enregistrer les résultats
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add resultats/
+          git diff --cached --quiet || (git commit -m "Transcription automatique des pages" && git push)
