@@ -1,0 +1,92 @@
+{
+  "contenu": [
+    {
+      "type": "titre",
+      "texte": "Chapitre I : Les terrassements"
+    },
+    {
+      "type": "titre",
+      "texte": "I-"
+    },
+    {
+      "type": "paragraphe",
+      "texte": "Le décapage est évalué en m² si la profondeur de décapage ne dépasse pas 25 cm, mais au-delà de 25 cm il est évalué en m³."
+    },
+    {
+      "type": "titre",
+      "texte": "Application 1"
+    },
+    {
+      "type": "schema",
+      "description": "Plan schématique d'une pièce rectangulaire avec une ouverture de porte en bas et une fenêtre sur le mur droit, coté en intérieur et en épaisseur de murs.",
+      "elements": [
+        {
+          "genre": "rectangle",
+          "role": "murs du bâtiment",
+          "largeur_cote": "6.00 intérieur",
+          "hauteur_cote": "5.00 intérieur"
+        },
+        {
+          "genre": "ouverture",
+          "sorte": "porte",
+          "mur": "bas",
+          "avec_arc": true
+        },
+        {
+          "genre": "ouverture",
+          "sorte": "fenêtre",
+          "mur": "droit"
+        }
+      ],
+      "cotes": [
+        {
+          "valeur": "15",
+          "mesure": "épaisseur du mur gauche",
+          "position": "gauche"
+        },
+        {
+          "valeur": "15",
+          "mesure": "épaisseur du mur haut",
+          "position": "haut"
+        },
+        {
+          "valeur": "6.00",
+          "mesure": "longueur intérieure",
+          "position": "haut"
+        },
+        {
+          "valeur": "15",
+          "mesure": "épaisseur du mur droit",
+          "position": "droite"
+        },
+        {
+          "valeur": "5.00",
+          "mesure": "largeur intérieure",
+          "position": "gauche"
+        },
+        {
+          "valeur": "15",
+          "mesure": "épaisseur du mur bas",
+          "position": "bas"
+        }
+      ],
+      "hachures": [],
+      "couleurs": [],
+      "annotations": []
+    },
+    {
+      "type": "paragraphe",
+      "texte": "1) Calculer la surface de décapage en prévoyant un débordement de 1,75 m de part et d'autre des murs extérieurs."
+    },
+    {
+      "type": "paragraphe",
+      "texte": "2) Calculer le volume de décapage avec profondeur h = 35 cm."
+    }
+  ],
+  "alertes": [
+    "Présence du nombre '25' isolé dans la marge gauche à hauteur du premier paragraphe.",
+    "La numérotation 'I-' sous le titre est manuscrite et pourrait ressembler à '2-'.",
+    "Les calculs correspondant aux questions 1) et 2) ne figurent pas sur cette page."
+  ],
+  "continue_sur_page_suivante": true
+}
