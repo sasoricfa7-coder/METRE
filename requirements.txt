@@ -1,0 +1,6 @@
+google-genai
+groq
+pillow
+python-docx
+matplotlib
+python-dotenv

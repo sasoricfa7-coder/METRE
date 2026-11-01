@@ -1,0 +1,6 @@
+secret/
+.env
+__pycache__/
+*.pyc
+monenv/
+sortie/
