@@ -1,0 +1,220 @@
+{
+  "contenu": [
+    {
+      "type": "titre",
+      "texte": "Application 2 : forme congé"
+    },
+    {
+      "type": "schema",
+      "description": "Plan côté d'un bâtiment rectangulaire d'une pièce avec un angle intérieur inférieur droit arrondi (congé), une fenêtre sur le mur supérieur et une porte battante sur le mur inférieur.",
+      "elements": [
+        {
+          "genre": "rectangle",
+          "role": "mur extérieur",
+          "largeur_cote": "5.00",
+          "hauteur_cote": "3.00"
+        },
+        {
+          "genre": "rectangle",
+          "role": "espace intérieur",
+          "largeur_cote": "4.70",
+          "hauteur_cote": "2.70"
+        },
+        {
+          "genre": "ouverture",
+          "sorte": "fenêtre",
+          "mur": "haut"
+        },
+        {
+          "genre": "ouverture",
+          "sorte": "porte",
+          "mur": "bas",
+          "avec_arc": true
+        },
+        {
+          "genre": "arc",
+          "rayon_cote": "85 cm",
+          "coin": "bas-droit"
+        }
+      ],
+      "cotes": [
+        {
+          "valeur": ",15",
+          "mesure": "épaisseur du mur gauche",
+          "position": "haut"
+        },
+        {
+          "valeur": "4,70",
+          "mesure": "longueur intérieure",
+          "position": "haut"
+        },
+        {
+          "valeur": ",15",
+          "mesure": "épaisseur du mur droit",
+          "position": "haut"
+        },
+        {
+          "valeur": ",15",
+          "mesure": "épaisseur du mur supérieur",
+          "position": "gauche"
+        },
+        {
+          "valeur": "2,70",
+          "mesure": "largeur intérieure",
+          "position": "gauche"
+        },
+        {
+          "valeur": ",15",
+          "mesure": "épaisseur du mur inférieur",
+          "position": "gauche"
+        },
+        {
+          "valeur": ",15",
+          "mesure": "épaisseur du mur supérieur",
+          "position": "droite"
+        },
+        {
+          "valeur": "1,85",
+          "mesure": "partie droite rectiligne du mur droit intérieur",
+          "position": "droite"
+        },
+        {
+          "valeur": ",85",
+          "mesure": "hauteur de la zone du congé",
+          "position": "droite"
+        },
+        {
+          "valeur": ",15",
+          "mesure": "épaisseur du mur inférieur",
+          "position": "droite"
+        },
+        {
+          "valeur": ",15",
+          "mesure": "épaisseur du mur gauche",
+          "position": "bas"
+        },
+        {
+          "valeur": "3.85",
+          "mesure": "longueur intérieure rectiligne jusqu'au congé",
+          "position": "bas"
+        },
+        {
+          "valeur": "85",
+          "mesure": "largeur de la zone du congé",
+          "position": "bas"
+        },
+        {
+          "valeur": ",15",
+          "mesure": "épaisseur du mur droit",
+          "position": "bas"
+        }
+      ],
+      "hachures": [],
+      "couleurs": [],
+      "annotations": [
+        "R = 85 cm"
+      ]
+    },
+    {
+      "type": "paragraphe",
+      "texte": "1) Calculer la surface de décapage en prévoyant un débordement de 2 m de part et d'autre des murs extérieurs."
+    },
+    {
+      "type": "paragraphe",
+      "texte": "2) Calculer le volume de décapage avec profondeur h = 35 cm."
+    },
+    {
+      "type": "titre",
+      "texte": "Solution"
+    },
+    {
+      "type": "schema",
+      "description": "Schéma d'implantation de l'emprise de décapage avec un débord de 2 m autour du bâtiment (dimensions extérieures 5 m x 3 m avec congé d'angle).",
+      "elements": [
+        {
+          "genre": "rectangle",
+          "role": "contour extérieur du bâtiment",
+          "largeur_cote": "5",
+          "hauteur_cote": "3"
+        },
+        {
+          "genre": "rectangle",
+          "role": "emprise du décapage",
+          "largeur_cote": "9",
+          "hauteur_cote": "7"
+        },
+        {
+          "genre": "arc",
+          "rayon_cote": "1 m",
+          "coin": "bas-droit du bâtiment"
+        },
+        {
+          "genre": "arc",
+          "coin": "bas-droit du décapage"
+        }
+      ],
+      "cotes": [
+        {
+          "valeur": "9",
+          "mesure": "largeur totale du décapage",
+          "position": "haut"
+        },
+        {
+          "valeur": "5",
+          "mesure": "largeur extérieure du bâtiment",
+          "position": "haut"
+        },
+        {
+          "valeur": "7",
+          "mesure": "hauteur totale du décapage",
+          "position": "gauche"
+        },
+        {
+          "valeur": "3",
+          "mesure": "hauteur extérieure du bâtiment",
+          "position": "gauche"
+        },
+        {
+          "valeur": "2",
+          "mesure": "débordement supérieur",
+          "position": "gauche"
+        },
+        {
+          "valeur": "2",
+          "mesure": "débordement inférieur",
+          "position": "gauche"
+        },
+        {
+          "valeur": "2",
+          "mesure": "débordement supérieur droit",
+          "position": "droite"
+        },
+        {
+          "valeur": "2",
+          "mesure": "débordement droit",
+          "position": "droite"
+        },
+        {
+          "valeur": "4",
+          "mesure": "partie rectiligne inférieure du bâtiment",
+          "position": "bas"
+        },
+        {
+          "valeur": "3",
+          "mesure": "rayon/débordement au congé extérieur",
+          "position": "bas-droite"
+        }
+      ],
+      "hachures": [],
+      "couleurs": [],
+      "annotations": [
+        "R = 1m"
+      ]
+    }
+  ],
+  "alertes": [
+    "Date '31/10/2025' inscrite dans la marge gauche en face de 'Solution'.",
+    "La solution n'est pas rédigée sur cette page : seul le schéma d'implantation est amorcé avant la fin de la page."
+  ],
+  "continue_sur_page_suivante": true
+}

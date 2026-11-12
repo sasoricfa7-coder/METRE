@@ -1,0 +1,72 @@
+{
+  "contenu": [
+    {
+      "type": "calcul",
+      "lignes": [
+        "S.D = S.T - S.H",
+        "S.D = 35 - 0.86",
+        "S.D = 34.14 m²"
+      ]
+    },
+    {
+      "type": "titre",
+      "texte": "2) Calculons la longueur développée totale des fouilles en rigoles :"
+    },
+    {
+      "type": "calcul",
+      "lignes": [
+        "LdT = LdH + LdV + Larc",
+        "LdH = 5.30 + 4.15",
+        "LdH = 9.45 m"
+      ]
+    },
+    {
+      "type": "calcul",
+      "lignes": [
+        "LdV = 2.40 + 1.70",
+        "LdV = 4.10 m"
+      ]
+    },
+    {
+      "type": "calcul",
+      "lignes": [
+        "LdT = LdH + LdV",
+        "LdT = 9.45 + 4.10",
+        "LdT = [illisible]"
+      ]
+    },
+    {
+      "type": "calcul",
+      "lignes": [
+        "Larc = (2 * pi * R) / 4",
+        "Larc = (2 * pi * 0.925) / 4",
+        "Larc = 1.45 m"
+      ]
+    },
+    {
+      "type": "calcul",
+      "lignes": [
+        "LdT = LdH + LdV + Larc",
+        "LdT = 9.45 + 4.10 + 1.45",
+        "LdT = 15 m"
+      ]
+    },
+    {
+      "type": "titre",
+      "texte": "3) Calculons le volume avec profondeur 50cm"
+    },
+    {
+      "type": "calcul",
+      "lignes": [
+        "V = LdT * h * l",
+        "V = 15 * 0.5 * 0.45",
+        "V = 3.375 m³"
+      ]
+    }
+  ],
+  "alertes": [
+    "Le chiffre 3 de la numérotation du dernier calcul est écrit de manière un peu ambiguë, il ressemble à un '2' barré ou modifié.",
+    "Un calcul intermédiaire pour LdT est barré et laissé incomplet dans le texte."
+  ],
+  "continue_sur_page_suivante": false
+}

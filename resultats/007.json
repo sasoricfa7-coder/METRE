@@ -1,0 +1,192 @@
+{
+  "contenu": [
+    {
+      "type": "titre",
+      "texte": "Application 4"
+    },
+    {
+      "type": "schema",
+      "description": "Plan schématique d'un bâtiment rectangulaire avec un coin biseauté à droite, comportant des cotes et des lignes d'extension.",
+      "elements": [],
+      "cotes": [
+        {
+          "valeur": "15",
+          "mesure": "débord haut-gauche",
+          "position": "haut-gauche"
+        },
+        {
+          "valeur": "6,00",
+          "mesure": "longueur haut",
+          "position": "haut"
+        },
+        {
+          "valeur": "15",
+          "mesure": "débord haut-droit",
+          "position": "haut-droit"
+        },
+        {
+          "valeur": "15",
+          "mesure": "débord bas-gauche",
+          "position": "bas-gauche"
+        },
+        {
+          "valeur": "3,15",
+          "mesure": "longueur bas",
+          "position": "bas-gauche"
+        },
+        {
+          "valeur": "85",
+          "mesure": "longueur bas-droit",
+          "position": "bas-droit"
+        },
+        {
+          "valeur": "15",
+          "mesure": "débord droite haut",
+          "position": "droite-haut"
+        },
+        {
+          "valeur": "2,15",
+          "mesure": "hauteur droite milieu",
+          "position": "droite"
+        },
+        {
+          "valeur": "1",
+          "mesure": "hauteur droite bas",
+          "position": "droite-bas"
+        },
+        {
+          "valeur": "15",
+          "mesure": "débord gauche",
+          "position": "gauche"
+        }
+      ],
+      "hachures": [],
+      "couleurs": [],
+      "annotations": []
+    },
+    {
+      "type": "paragraphe",
+      "texte": "1) Calculer la surface de décapage en prévoyant 2 m de part et d'autre."
+    },
+    {
+      "type": "paragraphe",
+      "texte": "2) Calculer le volume de décapage : profondeur : 30 cm."
+    },
+    {
+      "type": "titre",
+      "texte": "Solution"
+    },
+    {
+      "type": "schema",
+      "description": "Schéma de la solution montrant le périmètre décalé de 2m de part et d'autre avec un coin inférieur droit hachuré.",
+      "elements": [
+        {
+          "genre": "rectangle",
+          "role": "contour extérieur du décapage",
+          "largeur_cote": "8,30",
+          "hauteur_cote": "7,30"
+        }
+      ],
+      "cotes": [
+        {
+          "valeur": "2",
+          "mesure": "débord haut-gauche",
+          "position": "haut-gauche"
+        },
+        {
+          "valeur": "4,30",
+          "mesure": "longueur intérieure haut",
+          "position": "haut"
+        },
+        {
+          "valeur": "2",
+          "mesure": "débord haut-droit",
+          "position": "haut-droit"
+        },
+        {
+          "valeur": "2",
+          "mesure": "débord gauche haut",
+          "position": "gauche-haut"
+        },
+        {
+          "valeur": "0,30",
+          "mesure": "épaisseur coin gauche",
+          "position": "gauche"
+        },
+        {
+          "valeur": "3,30",
+          "mesure": "hauteur intérieure",
+          "position": "gauche"
+        },
+        {
+          "valeur": "2",
+          "mesure": "débord gauche bas",
+          "position": "gauche-bas"
+        },
+        {
+          "valeur": "2",
+          "mesure": "débord bas-gauche",
+          "position": "bas-gauche"
+        },
+        {
+          "valeur": "3,30",
+          "mesure": "longueur intérieure bas",
+          "position": "bas"
+        },
+        {
+          "valeur": "1",
+          "mesure": "débord bas",
+          "position": "bas"
+        },
+        {
+          "valeur": "2",
+          "mesure": "débord droite",
+          "position": "droite"
+        },
+        {
+          "valeur": "8,30",
+          "mesure": "longueur totale haut",
+          "position": "haut"
+        },
+        {
+          "valeur": "7,30",
+          "mesure": "hauteur totale gauche",
+          "position": "gauche"
+        }
+      ],
+      "hachures": [
+        {
+          "zone": "coin bas-droit",
+          "couleur": "encre normale",
+          "etiquette": "SH"
+        }
+      ],
+      "couleurs": [],
+      "annotations": [
+        "1m",
+        "1m",
+        "2",
+        "2",
+        "3",
+        "3"
+      ]
+    },
+    {
+      "type": "paragraphe",
+      "texte": "1)"
+    },
+    {
+      "type": "calcul",
+      "lignes": [
+        "SD = ST - SH",
+        "ST = L x l = 8,30 x 7,30",
+        "ST = 60,59 m²"
+      ]
+    }
+  ],
+  "alertes": [
+    "La fin du calcul est coupée par le bas de la page.",
+    "Le contenu continue sur la page suivante."
+  ],
+  "continue_sur_page_suivante": true
+}

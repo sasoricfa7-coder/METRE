@@ -1,0 +1,56 @@
+{
+  "contenu": [
+    {
+      "type": "titre",
+      "texte": "Solution"
+    },
+    {
+      "type": "paragraphe",
+      "texte": "1) Calculons le volume des fouilles pour semelles filantes :"
+    },
+    {
+      "type": "calcul",
+      "lignes": [
+        "Ldf = LdH + LdV",
+        "LdH = 2,20 + 2,20",
+        "LdH = 4,40 m",
+        "LdV = 1,85 + 1,85",
+        "LdV = 3,70 m",
+        "Ldf = LdH + LdV",
+        "= 4,40 + 3,70",
+        "Ldf = 8,10 m",
+        "V = Ldf x h x l",
+        "= 8,10 x 0,5 x 0,4",
+        "V = 1,62 m3"
+      ]
+    },
+    {
+      "type": "paragraphe",
+      "texte": "2) Calculons le volume des fouilles pour semelles isolées :"
+    },
+    {
+      "type": "calcul",
+      "lignes": [
+        "V = (L x l) x h x n",
+        "= (1 x 1) x 0,8 x 4",
+        "V = 3,2 m3"
+      ]
+    },
+    {
+      "type": "paragraphe",
+      "texte": "3) En déduisons le volume total :"
+    },
+    {
+      "type": "calcul",
+      "lignes": [
+        "VT = Vsf + Vi",
+        "= 1,62 + 3,2",
+        "VT = 4,82 m3"
+      ]
+    }
+  ],
+  "alertes": [
+    "La formule de calcul du volume des semelles isolées utilise la lettre 'l' (ou '1') à la place du nombre de semelles (n=4 apparaît ensuite)."
+  ],
+  "continue_sur_page_suivante": false
+}

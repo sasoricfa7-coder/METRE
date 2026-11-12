@@ -1,0 +1,71 @@
+{
+  "contenu": [
+    {
+      "type": "schema",
+      "description": "Schéma d'une vue en plan rectangulaire avec des détails dans les coins et des dimensions indiquées.",
+      "elements": [],
+      "cotes": [],
+      "hachures": [],
+      "couleurs": [],
+      "annotations": [
+        "6.30",
+        "5.30",
+        "5.30",
+        "4.30",
+        "h = 30 cm",
+        "SH",
+        "SH"
+      ]
+    },
+    {
+      "type": "calcul",
+      "lignes": [
+        "1)",
+        "SD = St - SH1 - SH2",
+        "St = L x l",
+        "= 6.30 x 5.30",
+        "St = 33.39 m²"
+      ]
+    },
+    {
+      "type": "calcul",
+      "lignes": [
+        "SH1 = C x C - ( \\pi R² ) / 4",
+        "= 2 x 2 - ( \\pi 2² ) / 4",
+        "= 4 - ( \\pi x 4 ) / 4",
+        "= 4 - \\pi",
+        "SH1 = 0.86 m²"
+      ]
+    },
+    {
+      "type": "calcul",
+      "lignes": [
+        "SH2 = ( b x h ) / 2",
+        "= ( 2 x 2 ) / 2",
+        "SH2 = 2 m²"
+      ]
+    },
+    {
+      "type": "calcul",
+      "lignes": [
+        "SD = St - SH1 - SH2",
+        "= 33.39 - 0.86 - 2",
+        "SD = 30.53 m²"
+      ]
+    },
+    {
+      "type": "calcul",
+      "lignes": [
+        "2)",
+        "V = SD x h",
+        "= 30.53 x 0.3",
+        "V = 9.159 m³"
+      ]
+    }
+  ],
+  "alertes": [
+    "La formule SH1 comporte des notations qui mélangent texte manuscrit et symboles mathématiques (fractions et parenthèses).",
+    "Le calcul de St donne 33.39 m² (6.30 x 5.30 = 33.39)."
+  ],
+  "continue_sur_page_suivante": false
+}

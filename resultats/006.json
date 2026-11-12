@@ -1,0 +1,113 @@
+{
+  "contenu": [
+    {
+      "type": "paragraphe",
+      "texte": "2) Calculer le volume de décapage : profondeur : h = 0,40 m"
+    },
+    {
+      "type": "titre",
+      "texte": "Solution"
+    },
+    {
+      "type": "schema",
+      "description": "Un schéma de terrassement avec des rectangles imbriqués et des dimensions notées à l'intérieur et à l'extérieur.",
+      "elements": [
+        {
+          "genre": "rectangle",
+          "role": "surface totale",
+          "largeur_cote": "7,45",
+          "hauteur_cote": "6,45"
+        },
+        {
+          "genre": "rectangle",
+          "role": "surface hors emprise ou autre",
+          "largeur_cote": "1,70",
+          "hauteur_cote": "1,05"
+        }
+      ],
+      "cotes": [
+        {
+          "valeur": "7,45",
+          "mesure": "longueur totale",
+          "position": "haut"
+        },
+        {
+          "valeur": "6,45",
+          "mesure": "largeur totale",
+          "position": "gauche"
+        },
+        {
+          "valeur": "1,70",
+          "mesure": "partie horizontale",
+          "position": "centre"
+        },
+        {
+          "valeur": "1,05",
+          "mesure": "partie verticale",
+          "position": "droite"
+        }
+      ],
+      "hachures": [
+        {
+          "zone": "coin inférieur droit",
+          "couleur": "non spécifiée (encre noire)",
+          "etiquette": "SH"
+        }
+      ],
+      "couleurs": [],
+      "annotations": [
+        "7,45",
+        "6,45",
+        "1,70",
+        "1,05",
+        "0,75",
+        "1,35",
+        "3,15",
+        "1,35",
+        "3,65",
+        "0,5",
+        "1,5",
+        "SH"
+      ]
+    },
+    {
+      "type": "paragraphe",
+      "texte": "1) Calculons SD"
+    },
+    {
+      "type": "calcul",
+      "lignes": [
+        "SD = ST - SH",
+        "ST = 7,45 x 6,45",
+        "ST = 48,0525 m²",
+        "SH = L x l",
+        "SH = 1,70 x 1,05",
+        "SH = 1,785 m²"
+      ]
+    },
+    {
+      "type": "calcul",
+      "lignes": [
+        "SD = ST - SH",
+        "= 48,0525 - 1,785",
+        "SD = 46,2675 m²"
+      ]
+    },
+    {
+      "type": "paragraphe",
+      "texte": "2) Calculons V"
+    },
+    {
+      "type": "calcul",
+      "lignes": [
+        "V = SD x h",
+        "= 46,2675 x 0,40",
+        "V = 18,506 m³"
+      ]
+    }
+  ],
+  "alertes": [
+    "La formule de soustraction des surfaces donne 48,0525 - 1,785 = 46,2675 m² (le texte écrit 46,265 m² par une légère approximation ou omission de chiffre, mais le texte est transcrit tel quel)."
+  ],
+  "continue_sur_page_suivante": false
+}

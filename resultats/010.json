@@ -1,0 +1,46 @@
+{
+  "contenu": [
+    {
+      "type": "titre",
+      "texte": "I - Les fouilles"
+    },
+    {
+      "type": "titre",
+      "texte": "Définition"
+    },
+    {
+      "type": "paragraphe",
+      "texte": "Les fouilles sont des terrassements dont la profondeur est plus importante que le décapage des terres."
+    },
+    {
+      "type": "titre",
+      "texte": "1) Calcul"
+    },
+    {
+      "type": "paragraphe",
+      "texte": "Pour le calcul des fouilles :"
+    },
+    {
+      "type": "paragraphe",
+      "texte": "* Pour les fouilles des semelles isolées, le calcul se fait en multipliant la section de la semelle isolée (L x l) par la profondeur de la fouille (h), et multiplier le tout par le nombre de semelles isolées."
+    },
+    {
+      "type": "calcul",
+      "lignes": [
+        "V = (L x l) x h x m",
+        "m = nombre de fouilles isolées",
+        "L = longueur de la fouille isolée",
+        "l = largeur de la fouille",
+        "h = profondeur de la fouille"
+      ]
+    },
+    {
+      "type": "paragraphe",
+      "texte": "* Pour les fouilles des semelles filantes, le calcul se fait en calculant en multipliant la longueur développée totale (Ldt) par la largeur (l) et par la profondeur (h)."
+    }
+  ],
+  "alertes": [
+    "La phrase 'en calculant en multipliant' dans le paragraphe sur les semelles filantes est redondante dans le texte manuscrit original."
+  ],
+  "continue_sur_page_suivante": true
+}

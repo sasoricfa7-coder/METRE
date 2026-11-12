@@ -1,0 +1,105 @@
+{
+  "contenu": [
+    {
+      "type": "titre",
+      "texte": "Application 2"
+    },
+    {
+      "type": "schema",
+      "description": "Plan schématique d'un bâtiment ou d'une fouille avec des murs et des cloisons intérieures, comportant des cotes extérieures et intérieures.",
+      "elements": [],
+      "cotes": [
+        {
+          "valeur": "6,30",
+          "mesure": "longueur totale en haut",
+          "position": "haut"
+        },
+        {
+          "valeur": "3,00",
+          "mesure": "hauteur de la partie gauche",
+          "position": "gauche"
+        },
+        {
+          "valeur": "0,45",
+          "mesure": "épaisseur ou décalage",
+          "position": "gauche"
+        },
+        {
+          "valeur": "0,85",
+          "mesure": "décalage ou épaisseur",
+          "position": "gauche"
+        },
+        {
+          "valeur": "0,45",
+          "mesure": "épaisseur",
+          "position": "gauche"
+        },
+        {
+          "valeur": "0,15",
+          "mesure": "épaisseur",
+          "position": "bas"
+        },
+        {
+          "valeur": "2,85",
+          "mesure": "longueur partielle en bas",
+          "position": "bas"
+        },
+        {
+          "valeur": "0,45",
+          "mesure": "épaisseur",
+          "position": "bas"
+        },
+        {
+          "valeur": "1,50",
+          "mesure": "longueur partielle en bas",
+          "position": "bas"
+        },
+        {
+          "valeur": "0,45",
+          "mesure": "épaisseur",
+          "position": "bas"
+        }
+      ],
+      "hachures": [],
+      "couleurs": [],
+      "annotations": []
+    },
+    {
+      "type": "paragraphe",
+      "texte": "1) Calculer la surface de décapage en prévoyant 1 m de part et d'autre."
+    },
+    {
+      "type": "paragraphe",
+      "texte": "2) Calculer la longueur développée totale des fouilles en rigoles."
+    },
+    {
+      "type": "paragraphe",
+      "texte": "3) Calculer le volume des fouilles en rigoles avec largeur des fouilles 45 cm et profondeur 50 cm."
+    },
+    {
+      "type": "titre",
+      "texte": "Solution"
+    },
+    {
+      "type": "calcul",
+      "lignes": [
+        "1) Sd = 39,84 m²."
+      ]
+    },
+    {
+      "type": "paragraphe",
+      "texte": "2) Longueur développée totale des fouilles en rigoles :"
+    },
+    {
+      "type": "calcul",
+      "lignes": [
+        "LdT = Ldt + Ldv",
+        "LdT = 5,10 + 3,45 + 2,10 = 10,65 m"
+      ]
+    }
+  ],
+  "alertes": [
+    "Le texte de l'énoncé et de la solution utilise une écriture manuscrite standard sans couleur spécifique autre que l'encre."
+  ],
+  "continue_sur_page_suivante": true
+}

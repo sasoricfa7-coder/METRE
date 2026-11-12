@@ -1,0 +1,73 @@
+{
+  "contenu": [
+    {
+      "type": "titre",
+      "texte": "Chapitre 1 : Les terrassements"
+    },
+    {
+      "type": "paragraphe",
+      "texte": "I - Le décapage est évalué en m² si la profondeur de décapage ne dépasse pas 25 cm, mais au-delà de 25 cm il est évalué en m³."
+    },
+    {
+      "type": "titre",
+      "texte": "Application 1"
+    },
+    {
+      "type": "schema",
+      "description": "Plan architectural rectangulaire avec des murs intérieurs et extérieurs, comprenant une porte et une fenêtre.",
+      "elements": [
+        {
+          "genre": "rectangle",
+          "role": "bâtiment",
+          "largeur_cote": "6,00",
+          "hauteur_cote": "5,00"
+        }
+      ],
+      "cotes": [
+        {
+          "valeur": "6,00",
+          "mesure": "longueur intérieure",
+          "position": "haut"
+        },
+        {
+          "valeur": "5,00",
+          "mesure": "hauteur intérieure",
+          "position": "centre-gauche"
+        },
+        {
+          "valeur": "15",
+          "mesure": "épaisseur de mur",
+          "position": "gauche et droite"
+        },
+        {
+          "valeur": "15",
+          "mesure": "épaisseur de mur",
+          "position": "haut et bas"
+        }
+      ],
+      "hachures": [],
+      "couleurs": [],
+      "annotations": [
+        "6,00",
+        "5,00",
+        "15",
+        "15",
+        "15",
+        "15"
+      ]
+    },
+    {
+      "type": "paragraphe",
+      "texte": "1) Calculer la surface de décapage en prévoyant un débordement de 1,75 m de part et d'autre des murs extérieurs."
+    },
+    {
+      "type": "paragraphe",
+      "texte": "2) Calculer le volume de décapage avec profondeur h = 35 cm."
+    }
+  ],
+  "alertes": [
+    "Le texte '12/2025' est écrit dans la marge de gauche.",
+    "Il y a un symbole '2' en bas de la page, probablement une numérotation."
+  ],
+  "continue_sur_page_suivante": true
+}
