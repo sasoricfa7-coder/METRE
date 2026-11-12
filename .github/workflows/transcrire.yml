@@ -5,7 +5,7 @@ on:
     paths:
       - "scans/**"
   schedule:
-    - cron: "0 6 * * *"   # chaque jour à 6h UTC : reprend les pages restantes
+    - cron: "0 9 * * *"   # chaque jour à 9h UTC, après la réinitialisation des quotas
   workflow_dispatch:
 
 permissions:
@@ -21,6 +21,8 @@ jobs:
     timeout-minutes: 120
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main   # toujours la dernière version, avec les pages déjà traitées
 
       - uses: actions/setup-python@v5
         with:
@@ -34,7 +36,6 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: python traiter.py
 
-      # always() : on garde les pages réussies même si d'autres ont échoué
       - name: Enregistrer les résultats
         if: always()
         run: |
@@ -43,6 +44,9 @@ jobs:
           git add resultats/ rapport.json
           if ! git diff --cached --quiet; then
             git commit -m "Transcription automatique des pages"
-            git pull --rebase origin main
-            git push
+            for i in 1 2 3; do
+              git pull --rebase -X theirs origin main && git push && break
+              git rebase --abort 2>/dev/null || true
+              sleep 5
+            done
           fi

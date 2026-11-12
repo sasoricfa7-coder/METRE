@@ -6,17 +6,32 @@ import time
 
 from dotenv import load_dotenv
 from google import genai
+from google.genai import types
+from PIL import Image
 
-from test_gemini import lire_page
+from test_gemini import PROMPT
 
 DOSSIER_SCANS = "scans"
 DOSSIER_RESULTATS = "resultats"
 RAPPORT = "rapport.json"
 EXTENSIONS = (".jpg", ".jpeg", ".png")
-PAUSE_ENTRE_PAGES = 6        # secondes (reste sous 15 requêtes/minute)
-ESSAIS = 3
-ATTENTE_APRES_ECHEC = 65
-ECHECS_CONSECUTIFS_MAX = 3   # au-delà : quota probablement épuisé, on s'arrête
+
+# Chaque modèle a son propre quota gratuit : on les utilise l'un après l'autre
+MODELES = [
+    "gemini-3.8-flash",
+    "gemini-3.6-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite",
+]
+
+PAUSE_ENTRE_PAGES = 6
+ATTENTE_QUOTA_MINUTE = 65
+ATTENTE_SURCHARGE = 20
+ECHECS_CONSECUTIFS_MAX = 3
+
+
+class QuotaEpuise(Exception):
+    pass
 
 
 def lister_pages():
@@ -34,17 +49,56 @@ def valide(donnees):
     )
 
 
-def traiter_page(client, chemin):
-    for essai in range(1, ESSAIS + 1):
-        try:
-            donnees = lire_page(client, chemin)
-            if valide(donnees):
+def classer(erreur):
+    t = str(erreur)
+    if "404" in t or "NOT_FOUND" in t:
+        return "absent"
+    if "429" in t or "RESOURCE_EXHAUSTED" in t:
+        return "quota_jour" if "PerDay" in t else "quota_minute"
+    if "503" in t or "500" in t or "UNAVAILABLE" in t:
+        return "surcharge"
+    return "autre"
+
+
+def lire_page(client, chemin, morts):
+    """Essaie les modèles dans l'ordre. 'morts' = modèles inutilisables pour ce run."""
+    image = Image.open(chemin)
+    nom = os.path.basename(chemin)
+
+    for modele in MODELES:
+        if modele in morts:
+            continue
+        for tentative in (1, 2):
+            try:
+                reponse = client.models.generate_content(
+                    model=modele,
+                    contents=[image, PROMPT],
+                    config=types.GenerateContentConfig(
+                        temperature=0,
+                        response_mime_type="application/json",
+                    ),
+                )
+                donnees = json.loads(reponse.text)
+                if not valide(donnees):
+                    raise ValueError("réponse vide ou invalide")
+                donnees["_modele"] = modele
+                print(f"[ok] {nom} lu par {modele}")
                 return donnees
-            print(f"[essai {essai}/{ESSAIS}] {os.path.basename(chemin)} : réponse vide ou invalide")
-        except Exception as e:
-            print(f"[essai {essai}/{ESSAIS}] {os.path.basename(chemin)} : {str(e)[:150]}")
-        if essai < ESSAIS:
-            time.sleep(ATTENTE_APRES_ECHEC)
+            except Exception as e:
+                genre = classer(e)
+                print(f"[{genre}] {nom} / {modele} : {str(e)[:120]}")
+                if genre in ("absent", "quota_jour"):
+                    morts.add(modele)
+                    break
+                if tentative == 1 and genre in ("quota_minute", "surcharge"):
+                    time.sleep(ATTENTE_QUOTA_MINUTE if genre == "quota_minute" else ATTENTE_SURCHARGE)
+                    continue
+                if genre == "quota_minute":
+                    morts.add(modele)   # toujours bloqué après attente : on le laisse de côté
+                break
+
+    if all(m in morts for m in MODELES):
+        raise QuotaEpuise()
     return None
 
 
@@ -60,11 +114,11 @@ def ecrire_resume(rapport):
         f.write(f"| Traitées maintenant | {len(rapport['traitees'])} |\n")
         f.write(f"| Déjà faites avant | {len(rapport['deja_faites'])} |\n")
         f.write(f"| En échec | {len(rapport['echecs'])} |\n")
-        f.write(f"| Restantes (reprise au prochain lancement) | {len(rapport['restantes'])} |\n")
+        f.write(f"| Restantes (reprise automatique) | {len(rapport['restantes'])} |\n")
+        if rapport["quota_epuise"]:
+            f.write("\nQuota gratuit épuisé : le travail reprendra au prochain lancement.\n")
         if rapport["echecs"]:
             f.write("\nÉchecs : " + ", ".join(rapport["echecs"]) + "\n")
-        if rapport["restantes"]:
-            f.write("\nRestantes : " + ", ".join(rapport["restantes"]) + "\n")
 
 
 def main():
@@ -84,10 +138,14 @@ def main():
         "deja_faites": [],
         "echecs": [],
         "restantes": [],
+        "quota_epuise": False,
     }
     print(f"{len(pages)} page(s) trouvée(s)")
 
+    morts = set()
     consecutifs = 0
+    arret = False
+
     for nom in pages:
         sortie = os.path.join(DOSSIER_RESULTATS, os.path.splitext(nom)[0] + ".json")
 
@@ -95,11 +153,18 @@ def main():
             rapport["deja_faites"].append(nom)
             continue
 
-        if consecutifs >= ECHECS_CONSECUTIFS_MAX:
+        if arret or consecutifs >= ECHECS_CONSECUTIFS_MAX:
             rapport["restantes"].append(nom)
             continue
 
-        donnees = traiter_page(client, os.path.join(DOSSIER_SCANS, nom))
+        try:
+            donnees = lire_page(client, os.path.join(DOSSIER_SCANS, nom), morts)
+        except QuotaEpuise:
+            rapport["quota_epuise"] = True
+            rapport["restantes"].append(nom)
+            arret = True
+            continue
+
         if donnees is None:
             rapport["echecs"].append(nom)
             consecutifs += 1
@@ -109,17 +174,18 @@ def main():
         with open(sortie, "w", encoding="utf-8") as f:
             json.dump(donnees, f, ensure_ascii=False, indent=2)
         rapport["traitees"].append(nom)
-        print(f"[écrit] {sortie}")
         time.sleep(PAUSE_ENTRE_PAGES)
 
     with open(RAPPORT, "w", encoding="utf-8") as f:
         json.dump(rapport, f, ensure_ascii=False, indent=2)
     ecrire_resume(rapport)
 
-    if rapport["echecs"] or rapport["restantes"]:
-        print("Travail incomplet : voir rapport.json")
-        sys.exit(1)
-    print("Toutes les pages sont traitées.")
+    if rapport["restantes"]:
+        print(f"{len(rapport['restantes'])} page(s) restante(s), reprise au prochain lancement.")
+    if rapport["echecs"]:
+        print("Pages en échec : voir rapport.json")
+        sys.exit(1)   # rouge seulement pour une vraie erreur, pas pour un simple quota
+    print("Terminé.")
 
 
 if __name__ == "__main__":
