@@ -1,0 +1,137 @@
+{
+  "contenu": [
+    {
+      "type": "calcul",
+      "lignes": [
+        "L_dv = 2,70 + 0,55 + 3,70 = 6,95 m",
+        "L_dt = 10,65 + 6,95",
+        "L_dt = 17,60 m"
+      ]
+    },
+    {
+      "type": "titre",
+      "texte": "3) Calculons le volume."
+    },
+    {
+      "type": "calcul",
+      "lignes": [
+        "V = L_dt \\times l \\times h",
+        "= 17,60 \\times 0,45 \\times 0,5",
+        "V = 3,96 m^3"
+      ]
+    },
+    {
+      "type": "titre",
+      "texte": "Application 3"
+    },
+    {
+      "type": "schema",
+      "description": "Plan schématique d'un bâtiment ou terrain rectangulaire comportant un angle arrondi en bas à droite.",
+      "elements": [
+        {
+          "genre": "rectangle",
+          "role": "contour principal",
+          "largeur_cote": "u + 10",
+          "hauteur_cote": "v"
+        },
+        {
+          "genre": "arc",
+          "rayon_cote": "R = 85 cm",
+          "coin": "bas-droit"
+        }
+      ],
+      "cotes": [
+        {
+          "valeur": "h",
+          "mesure": "débord haut-gauche",
+          "position": "haut"
+        },
+        {
+          "valeur": "u + 10",
+          "mesure": "longueur centrale",
+          "position": "haut"
+        },
+        {
+          "valeur": "h",
+          "mesure": "débord haut-droit",
+          "position": "haut"
+        },
+        {
+          "valeur": "h",
+          "mesure": "débord gauche-haut",
+          "position": "gauche"
+        },
+        {
+          "valeur": "v",
+          "mesure": "hauteur centrale gauche",
+          "position": "gauche"
+        },
+        {
+          "valeur": "h",
+          "mesure": "débord gauche-bas",
+          "position": "gauche"
+        },
+        {
+          "valeur": "h",
+          "mesure": "débord droit-haut",
+          "position": "droite"
+        },
+        {
+          "valeur": "1,85",
+          "mesure": "hauteur centrale droite",
+          "position": "droite"
+        },
+        {
+          "valeur": "h",
+          "mesure": "débord droit-bas",
+          "position": "droite"
+        },
+        {
+          "valeur": "h",
+          "mesure": "débord bas-gauche",
+          "position": "bas"
+        },
+        {
+          "valeur": "h",
+          "mesure": "débord bas-droit",
+          "position": "bas"
+        }
+      ],
+      "hachures": [],
+      "couleurs": [],
+      "annotations": [
+        "R = 85 cm"
+      ]
+    },
+    {
+      "type": "paragraphe",
+      "texte": "Même consigne que l'exercice 2"
+    },
+    {
+      "type": "titre",
+      "texte": "Solution."
+    },
+    {
+      "type": "titre",
+      "texte": "1) Calculons la surface de décapage en prévoyant 1 m de part et d'autre :"
+    },
+    {
+      "type": "calcul",
+      "lignes": [
+        "S_D = S_T - S_H",
+        "S_T = L \\times l",
+        "= 7 \\times 5",
+        "S_T = 35 m^2",
+        "S_H = c \\times c - (\\frac{\\pi R^2}{4})",
+        "= 2 \\times 2 - (\\frac{\\pi R^2}{4})",
+        "S_H = 0,86 m^2"
+      ]
+    }
+  ],
+  "alertes": [
+    "Le détail de la formule de S_H réutilise les variables symboliques R^2 au lieu de substituer directement la valeur dans l'étape intermédiaire.",
+    "Le résultat final de S_D = S_T - S_H n'est pas encore calculé sur cette page."
+  ],
+  "continue_sur_page_suivante": true,
+  "_modele": "gemini-3.6-flash"
+}

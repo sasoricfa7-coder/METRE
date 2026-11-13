@@ -1,0 +1,103 @@
+{
+  "contenu": [
+    {
+      "type": "schema",
+      "description": "Plan schématique de fondations ou fouilles d'un bâtiment rectangulaire avec cotes d'épaisseurs et dimensions intérieures.",
+      "elements": [
+        {
+          "genre": "rectangle",
+          "role": "espace intérieur",
+          "largeur_cote": "6,00",
+          "hauteur_cote": "5,00"
+        },
+        {
+          "genre": "rectangle",
+          "role": "contour des fouilles et fondations"
+        }
+      ],
+      "cotes": [
+        {
+          "valeur": "6,00",
+          "mesure": "largeur intérieure",
+          "position": "centre"
+        },
+        {
+          "valeur": "5,00",
+          "mesure": "hauteur intérieure",
+          "position": "centre gauche"
+        },
+        {
+          "valeur": "20",
+          "mesure": "épaisseur d'angle / mur",
+          "position": "coins"
+        },
+        {
+          "valeur": "15",
+          "mesure": "épaisseur intérieure de fouille",
+          "position": "périphérie"
+        }
+      ],
+      "hachures": [
+        {
+          "zone": "bandes de la structure de fondation",
+          "couleur": "noire",
+          "etiquette": ""
+        }
+      ],
+      "couleurs": [
+        {
+          "couleur": "rouge",
+          "element": "traits d'axes et de repères aux quatre coins du plan"
+        }
+      ],
+      "annotations": [
+        "20",
+        "20",
+        "15",
+        "5,00",
+        "6,00"
+      ]
+    },
+    {
+      "type": "paragraphe",
+      "texte": "1) Surface de décapage"
+    },
+    {
+      "type": "calcul",
+      "lignes": [
+        "Sd = L x l",
+        "= 8,30 x 7,30",
+        "Sd = 60,59 m²"
+      ]
+    },
+    {
+      "type": "paragraphe",
+      "texte": "2) Calculons la longueur développée totale des fouilles."
+    },
+    {
+      "type": "calcul",
+      "lignes": [
+        "LdT = Ldh + Ldv",
+        "Ldh = 6,55 + 6,55 = 13,10 m",
+        "Ldv = 4,75 + 4,75 = 9,5 m",
+        "LdT = 13,10 m + 9,5 m",
+        "LdT = 22,6 m"
+      ]
+    },
+    {
+      "type": "paragraphe",
+      "texte": "3) Calculons le volume."
+    },
+    {
+      "type": "calcul",
+      "lignes": [
+        "V = LdT x l x h",
+        "= 22,6 m x 0,4 m x 0,5",
+        "V = 4,52 m³"
+      ]
+    }
+  ],
+  "alertes": [],
+  "continue_sur_page_suivante": false,
+  "_modele": "gemini-3.6-flash"
+}
