@@ -1,0 +1,118 @@
+{
+  "contenu": [
+    {
+      "type": "paragraphe",
+      "texte": "Enfin, faire la somme des longueurs verticales et des longueurs horizontales pour trouver la longueur développée totale, d'où la formule suivante :"
+    },
+    {
+      "type": "calcul",
+      "lignes": [
+        "LdT = LdH + LdV",
+        "LdT = LdH + LdV + Larc avec",
+        "LdT = Longueur développée totale",
+        "LdH = Longueur développée horizontale",
+        "LdV = Longueur développée verticale",
+        "Larc = Longueur arc"
+      ]
+    },
+    {
+      "type": "titre",
+      "texte": "03/12/2025 * Cas 2 :"
+    },
+    {
+      "type": "schema",
+      "description": "Schéma d'un plan de bâtiment rectangulaire divisé en trois pièces par des cloisons intérieures, avec des cotes de dimensions.",
+      "elements": [
+        {
+          "genre": "rectangle",
+          "role": "bâtiment",
+          "largeur_cote": "1.50 + 3.00",
+          "hauteur_cote": "1.60 + 1.20"
+        }
+      ],
+      "cotes": [
+        {
+          "valeur": "15",
+          "mesure": "épaisseur mur",
+          "position": "haut-gauche"
+        },
+        {
+          "valeur": "1.60",
+          "mesure": "hauteur pièce",
+          "position": "gauche"
+        },
+        {
+          "valeur": "15",
+          "mesure": "épaisseur mur",
+          "position": "milieu-gauche"
+        },
+        {
+          "valeur": "1.20",
+          "mesure": "hauteur pièce",
+          "position": "bas-gauche"
+        },
+        {
+          "valeur": "12",
+          "mesure": "épaisseur mur",
+          "position": "bas-gauche"
+        },
+        {
+          "valeur": "15",
+          "mesure": "épaisseur mur",
+          "position": "bas"
+        },
+        {
+          "valeur": "1.50",
+          "mesure": "largeur pièce",
+          "position": "bas"
+        },
+        {
+          "valeur": "15",
+          "mesure": "épaisseur mur",
+          "position": "bas"
+        },
+        {
+          "valeur": "3.00",
+          "mesure": "largeur pièce",
+          "position": "bas"
+        },
+        {
+          "valeur": "15",
+          "mesure": "épaisseur mur",
+          "position": "bas"
+        }
+      ],
+      "hachures": [],
+      "couleurs": [],
+      "annotations": [
+        "15",
+        "1.60",
+        "15",
+        "1.20",
+        "12",
+        "15",
+        "1.50",
+        "15",
+        "3.00",
+        "15"
+      ]
+    },
+    {
+      "type": "paragraphe",
+      "texte": "Les murs en élévations sont réalisés en agglos creux de 15x20x40 cm tandis que les murs de soubassement sont réalisés en agglos plein de 20x20x40 cm."
+    },
+    {
+      "type": "paragraphe",
+      "texte": "1) Calculer la longueur développée du mur de soubassement d'épaisseur 20cm."
+    },
+    {
+      "type": "paragraphe",
+      "texte": "2) Calculer la longueur développée du mur en élévation."
+    }
+  ],
+  "alertes": [
+    "Le terme 'agglos plein de 20x20x40 cm' contient une faute d'accord au singulier ('plein' au lieu de 'pleins'), corrigée dans le texte transcrit selon la règle 3."
+  ],
+  "continue_sur_page_suivante": true,
+  "_modele": "gemini-3.5-flash-lite"
+}

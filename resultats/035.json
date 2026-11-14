@@ -1,0 +1,110 @@
+{
+  "contenu": [
+    {
+      "type": "titre",
+      "texte": "Évaluation de la longueur développée du mur en élévation"
+    },
+    {
+      "type": "calcul",
+      "lignes": [
+        "Ld = Ld1 + Ld2 + Ld3 + Ld4",
+        "Ld1 = 4,15 + 1,40 = 5,55 m",
+        "Ld2 = 4,70 + 0,15 = 4,85 m",
+        "Ld3 = 4,70 m",
+        "Ld4 = 2 × (4,70 + 0,15) = 9,70 m",
+        "Ld = Ld1 + Ld2 + Ld3 + Ld4",
+        " = 10,35 + 1,50 + 11,50",
+        "Ld = 23,35 m."
+      ]
+    },
+    {
+      "type": "titre",
+      "texte": "2) Calcul de la longueur développée du mur avec les poteaux posés au droit des poteaux"
+    },
+    {
+      "type": "titre",
+      "texte": "Exercice d'application"
+    },
+    {
+      "type": "titre",
+      "texte": "* Cas 1"
+    },
+    {
+      "type": "schema",
+      "description": "Vue en plan montrant le tracé de murs et poteaux d'un bâtiment formant deux pièces contiguës avec leurs cotations verticales à gauche et cotations horizontales au centre.",
+      "elements": [
+        {
+          "genre": "rectangle",
+          "role": "murs extérieurs et séparatifs",
+          "largeur_cote": "3,60 et 2,50",
+          "hauteur_cote": "3,60 et 1,75"
+        }
+      ],
+      "cotes": [
+        {
+          "valeur": "0,20",
+          "mesure": "épaisseur du mur supérieur",
+          "position": "gauche haut"
+        },
+        {
+          "valeur": "3,60",
+          "mesure": "hauteur de la première pièce",
+          "position": "gauche milieu"
+        },
+        {
+          "valeur": "0,20",
+          "mesure": "épaisseur du mur séparatif horizontal",
+          "position": "gauche milieu"
+        },
+        {
+          "valeur": "1,75",
+          "mesure": "hauteur de la deuxième pièce",
+          "position": "gauche bas"
+        },
+        {
+          "valeur": "0,20",
+          "mesure": "épaisseur du mur inférieur",
+          "position": "gauche bas"
+        },
+        {
+          "valeur": "3,60",
+          "mesure": "largeur de la pièce gauche",
+          "position": "milieu gauche"
+        },
+        {
+          "valeur": "2,50",
+          "mesure": "largeur de la pièce droite",
+          "position": "milieu droit"
+        }
+      ],
+      "hachures": [],
+      "couleurs": [],
+      "annotations": [
+        "0,20",
+        "3,60",
+        "0,20",
+        "1,75",
+        "0,20",
+        "3,60",
+        "2,50"
+      ]
+    },
+    {
+      "type": "paragraphe",
+      "texte": "Les murs en élévation sont réalisés en agglos pleins de 20x20x40 cm."
+    },
+    {
+      "type": "paragraphe",
+      "texte": "- Calculer la longueur développée du mur de soubassement."
+    },
+    {
+      "type": "paragraphe",
+      "texte": "35"
+    }
+  ],
+  "alertes": [
+    "Le texte manuscrit des calculs dans la partie supérieure de la page est très effacé et présente des zones faiblement lisibles."
+  ],
+  "continue_sur_page_suivante": true,
+  "_modele": "gemini-3.6-flash"
+}

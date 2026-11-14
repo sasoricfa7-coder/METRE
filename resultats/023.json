@@ -1,0 +1,113 @@
+{
+  "contenu": [
+    {
+      "type": "paragraphe",
+      "texte": "Moussa veut faire le dallage de sa maison F2. Pour cela, il fait appel à un technicien. Ce dernier lui propose, avant de faire le dallage, de construire d'abord un mur de soubassement en brique pleine de 20 cm d'épaisseur et de hauteur 40 cm (deux couches). Ensuite, il faudra construire un chaînage bas de hauteur 20 cm sur la maçonnerie de brique pleine ; et enfin, il décide de remblayer l'intérieur de sa maison F2 avec une hauteur de remblais h = 50 cm."
+    },
+    {
+      "type": "paragraphe",
+      "texte": "1) Calculer le volume de remblai intérieur qu'il faut."
+    },
+    {
+      "type": "paragraphe",
+      "texte": "2) Calculer le volume de terre foisonnée sachant que le sol a un coefficient de foisonnement de 12 %."
+    },
+    {
+      "type": "titre",
+      "texte": "Résolution."
+    },
+    {
+      "type": "schema",
+      "description": "Schéma en coupe verticale (COUPE A-A) montrant les fondations/soubassement avec le remblai intérieur surligné en jaune.",
+      "elements": [
+        {
+          "genre": "mur",
+          "role": "mur de soubassement gauche avec chaînage",
+          "largeur_cote": "20",
+          "hauteur_cote": "60"
+        },
+        {
+          "genre": "mur",
+          "role": "mur de soubassement droit avec chaînage",
+          "largeur_cote": "20",
+          "hauteur_cote": "60"
+        },
+        {
+          "genre": "rectangle",
+          "role": "zone de remblai intérieur",
+          "largeur_cote": "4,35",
+          "hauteur_cote": "50"
+        }
+      ],
+      "cotes": [
+        {
+          "valeur": "15",
+          "mesure": "épaisseur mur supérieur gauche",
+          "position": "haut"
+        },
+        {
+          "valeur": "15",
+          "mesure": "épaisseur mur supérieur droit",
+          "position": "haut"
+        },
+        {
+          "valeur": "5.00",
+          "mesure": "largeur entre murs supérieurs",
+          "position": "milieu"
+        },
+        {
+          "valeur": "2,5",
+          "mesure": "décrochement gauche",
+          "position": "bas-gauche"
+        },
+        {
+          "valeur": "2,5",
+          "mesure": "décrochement droit",
+          "position": "bas-droit"
+        },
+        {
+          "valeur": "4,35",
+          "mesure": "largeur intérieure du remblai",
+          "position": "bas-milieu"
+        },
+        {
+          "valeur": "60",
+          "mesure": "hauteur totale du soubassement",
+          "position": "gauche"
+        },
+        {
+          "valeur": "20",
+          "mesure": "largeur base mur gauche",
+          "position": "bas"
+        },
+        {
+          "valeur": "20",
+          "mesure": "largeur base mur droit",
+          "position": "bas"
+        }
+      ],
+      "hachures": [
+        {
+          "zone": "murs et chaînage",
+          "couleur": "noir",
+          "etiquette": ""
+        }
+      ],
+      "couleurs": [
+        {
+          "couleur": "jaune",
+          "element": "zone du remblai intérieur"
+        }
+      ],
+      "annotations": [
+        "COUPE A-A"
+      ]
+    }
+  ],
+  "alertes": [
+    "La côte horizontale intérieure varie entre 5.00 en haut et 4.35 (ou 4.50) en bas selon le dessin.",
+    "Le texte 'Résolution.' figure avant le schéma et aucun calcul numérique rédigé ne suit sur cette page."
+  ],
+  "continue_sur_page_suivante": true,
+  "_modele": "gemini-3.6-flash"
+}

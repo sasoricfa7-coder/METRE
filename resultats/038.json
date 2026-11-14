@@ -1,0 +1,110 @@
+{
+  "contenu": [
+    {
+      "type": "titre",
+      "texte": "Solution"
+    },
+    {
+      "type": "paragraphe",
+      "texte": "1) Calculons la longueur développée du mur de soubassement :"
+    },
+    {
+      "type": "calcul",
+      "lignes": [
+        "LdT = LdH + LdV",
+        "LdH = 4,4 + 4,4 + 1,45 = 10,25 m",
+        "LdV = 2,6 + 2,6 + 2,8 = 8 m",
+        "LdT = LdH + LdV",
+        "= 10,25 + 8",
+        "LdT = 18,25 m"
+      ]
+    },
+    {
+      "type": "paragraphe",
+      "texte": "3) Calculons la longueur développée du mur en élévation :"
+    },
+    {
+      "type": "calcul",
+      "lignes": [
+        "LdT = LdH + LdV",
+        "LdH = 4,5 + 4,5 + 1,5 = 10,5 m",
+        "LdV = 2,7 + 2,7 + 2,85 = 8,25 m",
+        "LdT = LdH + LdV",
+        "= 10,5 + 8,25",
+        "LdT = 18,75 m"
+      ]
+    },
+    {
+      "type": "titre",
+      "texte": "Cas 3"
+    },
+    {
+      "type": "schema",
+      "description": "Schéma représentant un plan ou une élévation divisée en plusieurs parties avec des cotes et un angle arrondi en bas à droite.",
+      "elements": [
+        {
+          "genre": "rectangle",
+          "role": "vue d'ensemble",
+          "largeur_cote": "[illisible]",
+          "hauteur_cote": "[illisible]"
+        }
+      ],
+      "cotes": [
+        {
+          "valeur": "1.50",
+          "mesure": "longueur partielle horizontale",
+          "position": "haut-gauche"
+        },
+        {
+          "valeur": "3.00",
+          "mesure": "longueur partielle horizontale",
+          "position": "haut-droit"
+        },
+        {
+          "valeur": "1.50",
+          "mesure": "longueur partielle horizontale",
+          "position": "bas-gauche"
+        },
+        {
+          "valeur": "2.00",
+          "mesure": "longueur partielle horizontale",
+          "position": "bas-droit"
+        },
+        {
+          "valeur": "0.50",
+          "mesure": "hauteur partielle verticale",
+          "position": "gauche-haut"
+        },
+        {
+          "valeur": "2.80",
+          "mesure": "hauteur partielle verticale",
+          "position": "gauche-bas"
+        },
+        {
+          "valeur": "R1.50",
+          "mesure": "rayon de l'arrondi",
+          "position": "bas-droit"
+        }
+      ],
+      "hachures": [],
+      "couleurs": [],
+      "annotations": [
+        "Cas 3",
+        "1.50",
+        "3.00",
+        "1.50",
+        "2.00",
+        "0.50",
+        "2.80",
+        "R1.50",
+        "38"
+      ]
+    }
+  ],
+  "alertes": [
+    "Le numéro '2)' est absent entre la question 1 et la question 3 dans le texte original.",
+    "Certaines cotes sur le schéma sont partiellement illisibles en raison de l'écriture manuscrite."
+  ],
+  "continue_sur_page_suivante": true,
+  "_modele": "gemini-3.5-flash-lite"
+}

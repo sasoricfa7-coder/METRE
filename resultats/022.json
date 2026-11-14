@@ -1,0 +1,116 @@
+{
+  "contenu": [
+    {
+      "type": "paragraphe",
+      "texte": "Considérons la vue en plan ci-jointe, on décide d'augmenter le niveau intérieur de l'ouvrage de 40 cm."
+    },
+    {
+      "type": "paragraphe",
+      "texte": "Calculer le volume de remblai qu'il faut :"
+    },
+    {
+      "type": "titre",
+      "texte": "Solution :"
+    },
+    {
+      "type": "paragraphe",
+      "texte": "Calculons le volume de remblai qu'il faut :"
+    },
+    {
+      "type": "calcul",
+      "lignes": [
+        "V = L × l × h",
+        "= 4 × 3 × 0,4",
+        "V = 4,8 m³"
+      ]
+    },
+    {
+      "type": "paragraphe",
+      "texte": "a) Volume de remblai sous dallage"
+    },
+    {
+      "type": "titre",
+      "texte": "Application :"
+    },
+    {
+      "type": "schema",
+      "description": "Vue en plan d'un bâtiment divisé en deux pièces (Salon et Chambre) avec cotations des longueurs intérieures et épaisseurs de murs, ainsi que les sens d'ouverture de portes et des indications de coupe A-A.",
+      "elements": [
+        {
+          "genre": "rectangle",
+          "role": "contour général du bâtiment",
+          "largeur_cote": "8.65",
+          "hauteur_cote": "4.30"
+        },
+        {
+          "genre": "ouverture",
+          "sorte": "porte",
+          "mur": "inférieur",
+          "avec_arc": true
+        },
+        {
+          "genre": "ouverture",
+          "sorte": "porte",
+          "mur": "intérieur entre salon et couloir/chambre",
+          "avec_arc": true
+        }
+      ],
+      "cotes": [
+        {
+          "valeur": "15",
+          "mesure": "épaisseur du mur extérieur gauche",
+          "position": "bas"
+        },
+        {
+          "valeur": "5.00",
+          "mesure": "largeur intérieure du salon",
+          "position": "bas"
+        },
+        {
+          "valeur": "15",
+          "mesure": "épaisseur du mur intérieur de séparation",
+          "position": "bas"
+        },
+        {
+          "valeur": "3.20",
+          "mesure": "largeur intérieure de la chambre",
+          "position": "bas"
+        },
+        {
+          "valeur": "15",
+          "mesure": "épaisseur du mur extérieur droit",
+          "position": "bas"
+        },
+        {
+          "valeur": "15",
+          "mesure": "épaisseur du mur extérieur haut",
+          "position": "droit"
+        },
+        {
+          "valeur": "4.00",
+          "mesure": "hauteur intérieure des pièces",
+          "position": "droit"
+        },
+        {
+          "valeur": "15",
+          "mesure": "épaisseur du mur extérieur bas",
+          "position": "droit"
+        }
+      ],
+      "hachures": [],
+      "couleurs": [],
+      "annotations": [
+        "Salon",
+        "Chambre",
+        "A",
+        "A"
+      ]
+    }
+  ],
+  "alertes": [
+    "La ligne 'a) Remblai sous dallage' a été raturée et réécrite sous la forme 'a) Volume de remblai sous dallage'.",
+    "Gribouillage au crayon/stylo en bas à droite sous le schéma."
+  ],
+  "continue_sur_page_suivante": true,
+  "_modele": "gemini-3.6-flash"
+}

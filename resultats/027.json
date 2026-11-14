@@ -1,0 +1,75 @@
+{
+  "contenu": [
+    {
+      "type": "titre",
+      "texte": "1) Calculons la longueur développée des fouilles en rigole :"
+    },
+    {
+      "type": "calcul",
+      "lignes": [
+        "Ldf = Ldh + Ldv + Larc",
+        "Ldh = 8,7 + 7,425",
+        "Ldh = 16,125 m",
+        "Ldv = 2,75 + 2,75 + 1,875",
+        "Ldv = 7,375 m",
+        "Larc = (2 * π * R) / 4",
+        "= (2 * π * 1,075) / 4",
+        "Larc = 1,69 m",
+        "Ldf = 16,125 + 7,375 + 1,69",
+        "Ldf = 25,19 m"
+      ]
+    },
+    {
+      "type": "titre",
+      "texte": "2) Calculons le volume de remblai pour les vides des semelles filantes :"
+    },
+    {
+      "type": "calcul",
+      "lignes": [
+        "V = Ldf * l * h",
+        "= 25,19 m * 0,2 * 0,15",
+        "V = 0,756 m³"
+      ]
+    },
+    {
+      "type": "titre",
+      "texte": "3) Calculons le volume de remblai contre fondation :"
+    },
+    {
+      "type": "calcul",
+      "lignes": [
+        "V = Ldf * l * h",
+        "= 25,19 * 0,25 * 0,15",
+        "V = 0,945 m³"
+      ]
+    },
+    {
+      "type": "schema",
+      "description": "Vue en plan d'un tracé de fondations/fouilles rectangulaires comportant des murs de refend intérieurs et un angle arrondi en bas à droite.",
+      "elements": [
+        {
+          "genre": "rectangle",
+          "role": "contour des fouilles en rigole",
+          "largeur_cote": null,
+          "hauteur_cote": null
+        },
+        {
+          "genre": "arc",
+          "rayon_cote": null,
+          "coin": "bas-droit"
+        }
+      ],
+      "cotes": [],
+      "hachures": [],
+      "couleurs": [
+        "Trait rouge soulignant l'arc de cercle du coin inférieur droit"
+      ],
+      "annotations": []
+    }
+  ],
+  "alertes": [
+    "Dans le titre 1), le mot 'largeur' a été écrit avant 'longueur' par l'auteur (probable lapsus rédigé)."
+  ],
+  "continue_sur_page_suivante": false,
+  "_modele": "gemini-3.6-flash"
+}

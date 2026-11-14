@@ -1,0 +1,144 @@
+{
+  "contenu": [
+    {
+      "type": "paragraphe",
+      "texte": "largeur 40 cm, profondeur 40 cm. Pour réaliser la semelle filante on a d'abord coulé du béton de propreté de 5 cm d'épaisseur, ensuite on a coulé le béton de la semelle filante de hauteur 20 cm ; enfin sur ces semelles filantes on pose deux couches de briques pleines de 20 cm d'épaisseur. Avant de réaliser un chaînage bas au-dessus et de hauteur 20 cm. Le dallage est a pour épaisseur 10 cm."
+    },
+    {
+      "type": "paragraphe",
+      "texte": "1) Calculer la longueur développées des fouilles en rigole."
+    },
+    {
+      "type": "paragraphe",
+      "texte": "2) Calculer le volume de remblai pour les vides des fouilles pour semelle filante."
+    },
+    {
+      "type": "paragraphe",
+      "texte": "3) Calculer le volume de remblai contre fondation pour les semelles filante sachant que le mur de soubassement est d'épaisseur 15 cm et de hauteur 40 cm."
+    },
+    {
+      "type": "titre",
+      "texte": "Solution."
+    },
+    {
+      "type": "schema",
+      "description": "Schéma de coupe de fondation montrant les différents éléments (béton de propreté, semelle, maçonnerie, dallage) avec des cotations.",
+      "elements": [
+        {
+          "genre": "rectangle",
+          "role": "fondation/coupe",
+          "largeur_cote": "40 cm",
+          "hauteur_cote": "illisible"
+        }
+      ],
+      "cotes": [
+        {
+          "valeur": "40",
+          "mesure": "largeur totale de la fouille",
+          "position": "bas"
+        },
+        {
+          "valeur": "20",
+          "mesure": "largeur de la semelle",
+          "position": "bas"
+        },
+        {
+          "valeur": "10",
+          "mesure": "débordement",
+          "position": "bas"
+        },
+        {
+          "valeur": "10",
+          "mesure": "autre débordement",
+          "position": "bas"
+        },
+        {
+          "valeur": "5",
+          "mesure": "épaisseur béton de propreté",
+          "position": "bas"
+        },
+        {
+          "valeur": "20",
+          "mesure": "hauteur semelle filante",
+          "position": "gauche"
+        },
+        {
+          "valeur": "25",
+          "mesure": "hauteur mur",
+          "position": "gauche"
+        },
+        {
+          "valeur": "20",
+          "mesure": "hauteur chaînage ou briques",
+          "position": "gauche"
+        },
+        {
+          "valeur": "10",
+          "mesure": "épaisseur dallage",
+          "position": "gauche"
+        },
+        {
+          "valeur": "35",
+          "mesure": "hauteur sous dallage",
+          "position": "droite"
+        },
+        {
+          "valeur": "25",
+          "mesure": "hauteur",
+          "position": "droite"
+        },
+        {
+          "valeur": "20",
+          "mesure": "hauteur",
+          "position": "droite"
+        },
+        {
+          "valeur": "10",
+          "mesure": "hauteur",
+          "position": "droite"
+        },
+        {
+          "valeur": "+45",
+          "mesure": "niveau supérieur",
+          "position": "haut"
+        }
+      ],
+      "hachures": [
+        {
+          "zone": "béton/maçonnerie",
+          "couleur": "noir",
+          "etiquette": "hachures inclinées"
+        }
+      ],
+      "couleurs": [],
+      "annotations": [
+        "40",
+        "20",
+        "40",
+        "10",
+        "20",
+        "10",
+        "10",
+        "5",
+        "45",
+        "20",
+        "25",
+        "20",
+        "10",
+        "25",
+        "35",
+        "25",
+        "20",
+        "10",
+        "+45",
+        "Solution."
+      ]
+    }
+  ],
+  "alertes": [
+    "Certaines annotations manuscrites sur le schéma sont très serrées et peuvent prêter à confusion sur leur exacte attribution de cote.",
+    "La formulation 'longueur développées' dans la question 1 contient une petite faute d'accord dans l'original."
+  ],
+  "continue_sur_page_suivante": true,
+  "_modele": "gemini-3.5-flash-lite"
+}

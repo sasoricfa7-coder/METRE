@@ -1,0 +1,107 @@
+{
+  "contenu": [
+    {
+      "type": "titre",
+      "texte": "1) Calculons le volume de remblais"
+    },
+    {
+      "type": "calcul",
+      "lignes": [
+        "V = L x l x h",
+        "= (4,95 x 3,95) + (3,95 x 2,95) x 0,5",
+        "V = 25,379 m³"
+      ]
+    },
+    {
+      "type": "titre",
+      "texte": "2) Calculons le volume de terre foisonnée"
+    },
+    {
+      "type": "calcul",
+      "lignes": [
+        "Vf = VA (1 + 12 / 100)",
+        "= 25,379 x 1,12",
+        "Vf = 28,424 m³"
+      ]
+    },
+    {
+      "type": "titre",
+      "texte": "Exercice de maison"
+    },
+    {
+      "type": "schema",
+      "description": "Vue en plan d'un ouvrage de maçonnerie composé de deux pièces rectangulaires accolées avec cotations des murs et un arc de cercle dans le coin inférieur droit.",
+      "elements": [
+        {
+          "genre": "rectangle",
+          "role": "pièce principale gauche",
+          "largeur_cote": "5,00",
+          "hauteur_cote": "3,00"
+        },
+        {
+          "genre": "rectangle",
+          "role": "pièce secondaire droite",
+          "largeur_cote": "2,00",
+          "hauteur_cote": "3,00"
+        },
+        {
+          "genre": "arc",
+          "rayon_cote": "R = 1,00",
+          "coin": "bas-droit"
+        }
+      ],
+      "cotes": [
+        {
+          "valeur": "5,00",
+          "mesure": "largeur intérieure de la grande pièce",
+          "position": "centre-gauche"
+        },
+        {
+          "valeur": "3,00",
+          "mesure": "hauteur intérieure des pièces",
+          "position": "centre-droit"
+        },
+        {
+          "valeur": "2,00",
+          "mesure": "largeur intérieure de la pièce droite",
+          "position": "centre-droit"
+        },
+        {
+          "valeur": "1,00",
+          "mesure": "largeur du renfoncement droit",
+          "position": "droite"
+        },
+        {
+          "valeur": "15",
+          "mesure": "épaisseur des voiles / murs",
+          "position": "murs et contours"
+        },
+        {
+          "valeur": "R = 1,00",
+          "mesure": "rayon de courbure",
+          "position": "bas-droit"
+        }
+      ],
+      "hachures": [],
+      "couleurs": [],
+      "annotations": [
+        "15",
+        "5,00",
+        "3,00",
+        "2,00",
+        "1,00",
+        "R = 1,00"
+      ]
+    },
+    {
+      "type": "paragraphe",
+      "texte": "Même énoncé que l'exercice précédent."
+    }
+  ],
+  "alertes": [
+    "Calcul 1 : l'application numérique ((4,95 × 3,95) + (3,95 × 2,95)) × 0,5 donne théoriquement 15,6025 m³, alors que le texte indique 25,379 m³.",
+    "Presence du nombre '24' inscrit en bas à droite de la page."
+  ],
+  "continue_sur_page_suivante": true,
+  "_modele": "gemini-3.6-flash"
+}

@@ -1,0 +1,134 @@
+{
+  "contenu": [
+    {
+      "type": "titre",
+      "texte": "Exercice d'application"
+    },
+    {
+      "type": "paragraphe",
+      "texte": "* Cas 1"
+    },
+    {
+      "type": "paragraphe",
+      "texte": "Considérons le plan ci-dessous."
+    },
+    {
+      "type": "schema",
+      "description": "Vue en plan d'une construction à deux pièces juxtaposées séparées par un mur de refend, comportant la cotation des dimensions intérieures et des épaisseurs de murs.",
+      "elements": [
+        {
+          "genre": "rectangle",
+          "role": "mur extérieur",
+          "largeur_cote": "",
+          "hauteur_cote": ""
+        },
+        {
+          "genre": "rectangle",
+          "role": "pièce gauche",
+          "largeur_cote": "3,00",
+          "hauteur_cote": "4,10"
+        },
+        {
+          "genre": "rectangle",
+          "role": "pièce droite",
+          "largeur_cote": "2,30",
+          "hauteur_cote": ""
+        }
+      ],
+      "cotes": [
+        {
+          "valeur": "15",
+          "mesure": "épaisseur du mur extérieur supérieur",
+          "position": "haut-gauche"
+        },
+        {
+          "valeur": "15",
+          "mesure": "épaisseur du mur extérieur gauche",
+          "position": "gauche"
+        },
+        {
+          "valeur": "3,00",
+          "mesure": "largeur intérieure pièce gauche",
+          "position": "intérieur pièce gauche"
+        },
+        {
+          "valeur": "4,10",
+          "mesure": "hauteur intérieure pièce gauche",
+          "position": "intérieur pièce gauche"
+        },
+        {
+          "valeur": "15",
+          "mesure": "épaisseur du mur intérieur séparateur (refend)",
+          "position": "milieu"
+        },
+        {
+          "valeur": "2,30",
+          "mesure": "largeur intérieure pièce droite",
+          "position": "intérieur pièce droite"
+        },
+        {
+          "valeur": "15",
+          "mesure": "épaisseur du mur extérieur droit",
+          "position": "droite"
+        },
+        {
+          "valeur": "15",
+          "mesure": "épaisseur du mur extérieur inférieur",
+          "position": "bas-gauche"
+        }
+      ],
+      "hachures": [],
+      "couleurs": [],
+      "annotations": [
+        "15",
+        "15",
+        "3,00",
+        "4,10",
+        "15",
+        "2,30",
+        "15",
+        "15"
+      ]
+    },
+    {
+      "type": "paragraphe",
+      "texte": "Les murs en élévation sont réalisés en agglos creux de 15 x 20 x 50."
+    },
+    {
+      "type": "paragraphe",
+      "texte": "Calculer la longueur développée des murs en élévation."
+    },
+    {
+      "type": "titre",
+      "texte": "Solution"
+    },
+    {
+      "type": "schema",
+      "description": "Vue en plan schématique du bâtiment avec les murs hachurés pour préparer le calcul de la longueur développée.",
+      "elements": [
+        {
+          "genre": "rectangle",
+          "role": "murs en plan",
+          "largeur_cote": "",
+          "hauteur_cote": ""
+        }
+      ],
+      "cotes": [],
+      "hachures": [
+        {
+          "zone": "épaisseur des murs périphériques et intérieurs",
+          "couleur": "encre noire",
+          "etiquette": ""
+        }
+      ],
+      "couleurs": [],
+      "annotations": []
+    }
+  ],
+  "alertes": [
+    "Les dimensions de l'agglo en fin de ligne sont légèrement enclines en bord de page ('15 x 20 x 50' ou '15 x 20 x 40').",
+    "La solution n'est qu'amorcée par un schéma, les calculs continuent sur la page suivante."
+  ],
+  "continue_sur_page_suivante": true,
+  "_modele": "gemini-3.6-flash"
+}

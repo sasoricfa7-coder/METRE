@@ -1,0 +1,62 @@
+{
+  "contenu": [
+    {
+      "type": "paragraphe",
+      "texte": "2) Calculons le volume des fouilles pour semelles isolées."
+    },
+    {
+      "type": "calcul",
+      "lignes": [
+        "V = (L x l) x h x n",
+        "= (1 x 1) x 0,8 x 2",
+        "V = 1,6 m3"
+      ]
+    },
+    {
+      "type": "paragraphe",
+      "texte": "3) En déduire le volume total."
+    },
+    {
+      "type": "calcul",
+      "lignes": [
+        "VT = Vsf + Voi",
+        "= [illisible] 2,02 + 1,6",
+        "VT = 3,62 m3"
+      ]
+    },
+    {
+      "type": "titre",
+      "texte": "II- Remblai d'apport"
+    },
+    {
+      "type": "paragraphe",
+      "texte": "Le remblai provenant des fouilles est évalué au m3."
+    },
+    {
+      "type": "paragraphe",
+      "texte": "Le meilleur remblai est généralement de la latérite."
+    },
+    {
+      "type": "paragraphe",
+      "texte": "Toutes les terres extraites de fouilles ne sont pas forcément du bon remblai. Cette terre est réutilisable si la terre extraite est de bonne qualité."
+    },
+    {
+      "type": "titre",
+      "texte": "1) Calcul"
+    },
+    {
+      "type": "paragraphe",
+      "texte": "Pour le calcul des remblais, il se calcule en volume."
+    },
+    {
+      "type": "paragraphe",
+      "texte": "• Pour les semelles filantes il se calcule de la manière suivante."
+    }
+  ],
+  "alertes": [
+    "Dans la deuxième ligne du calcul pour le volume total, le chiffre avant '2,02' est barré ou illisible.",
+    "Le texte en bas à gauche comporte une date '31/10/2025' écrite verticalement dans la marge."
+  ],
+  "continue_sur_page_suivante": true,
+  "_modele": "gemini-3.5-flash-lite"
+}

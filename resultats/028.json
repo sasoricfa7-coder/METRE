@@ -1,0 +1,87 @@
+{
+  "contenu": [
+    {
+      "type": "titre",
+      "texte": "b1) Pour semelle isolée"
+    },
+    {
+      "type": "titre",
+      "texte": "Application"
+    },
+    {
+      "type": "paragraphe",
+      "texte": "On considère une semelle isolée de dimension 100 x 100 x 25. Cette semelle se trouve sous un poteau de dimension 20 x 20, de hauteur potelet h = 1,15 m. La semelle isolée est logée dans une fouille de profondeur 1 m.\n1/ Calculer le volume de remblai contre fondation de cette semelle."
+    },
+    {
+      "type": "paragraphe",
+      "texte": "NB : Le béton de propreté sous la semelle isolée est d'épaisseur 5 cm."
+    },
+    {
+      "type": "titre",
+      "texte": "Solution"
+    },
+    {
+      "type": "schema",
+      "description": "Vue en plan d'une semelle isolée carrée comportant un poteau au centre, entourée par le débord de la fouille / béton de propreté, avec cotations et un axe de coupe A-A.",
+      "elements": [
+        {
+          "genre": "rectangle",
+          "role": "contour extérieur (fouille / béton de propreté)"
+        },
+        {
+          "genre": "rectangle",
+          "role": "contour intermédiaire (semelle isolée)"
+        },
+        {
+          "genre": "rectangle",
+          "role": "contour intérieur au centre (poteau)"
+        }
+      ],
+      "cotes": [
+        {
+          "valeur": "40",
+          "mesure": "distance latérale gauche entre le bord du poteau et le bord de la semelle",
+          "position": "haut"
+        },
+        {
+          "valeur": "20",
+          "mesure": "largeur du poteau",
+          "position": "haut"
+        },
+        {
+          "valeur": "40",
+          "mesure": "distance latérale droite entre le bord du poteau et le bord de la semelle",
+          "position": "haut"
+        },
+        {
+          "valeur": "1 m",
+          "mesure": "largeur totale de la semelle",
+          "position": "bas"
+        },
+        {
+          "valeur": "10",
+          "mesure": "débord du béton de propreté",
+          "position": "gauche"
+        }
+      ],
+      "hachures": [],
+      "couleurs": [],
+      "annotations": [
+        "A",
+        "A",
+        "40",
+        "20",
+        "40",
+        "1 m",
+        "10",
+        "28"
+      ]
+    }
+  ],
+  "alertes": [
+    "Doute sur la puce de la première ligne : 'b1)', 'b2)' ou 'ba)'.",
+    "Les calculs de la solution ne figurent pas sur cette page et continuent sur la page suivante."
+  ],
+  "continue_sur_page_suivante": true,
+  "_modele": "gemini-3.6-flash"
+}

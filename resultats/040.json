@@ -1,0 +1,35 @@
+{
+  "contenu": [
+    {
+      "type": "titre",
+      "texte": "I - Calcul de la surface de la maçonnerie"
+    },
+    {
+      "type": "paragraphe",
+      "texte": "Pour le calcul de la surface de la maçonnerie dans le cas des fondations (mur de soubassement), on procède de la manière suivante :\nS = Ld x H avec\nLd : longueur développée totale des murs.\nH : hauteur du mur.\nS : surface."
+    },
+    {
+      "type": "paragraphe",
+      "texte": "Pour calculer la surface de la maçonnerie dans le cas des murs en élévation, on calcule d'abord la surface de la maçonnerie brute (sans ouverture) ; ensuite il faut calculer la surface totale des ouvertures (portes, fenêtres etc.) et enfin il faut prendre la surface de la maçonnerie brute et soustraire la surface des ouvertures pour trouver la surface nette de la maçonnerie."
+    },
+    {
+      "type": "titre",
+      "texte": "Calcul de la surface brute"
+    },
+    {
+      "type": "calcul",
+      "lignes": [
+        "S_brute = Ld x H_moy"
+      ]
+    },
+    {
+      "type": "paragraphe",
+      "texte": "Ld : longueur développée totale.\nH_moy : hauteur moyenne de la maçonnerie en élévation.\nS_brute : surface brute de la maçonnerie."
+    }
+  ],
+  "alertes": [
+    "Le titre de la première section commence par 'D -' ou 'I -' selon l'interprétation, transcrit par 'I -' par convention de cours, mais visuellement la lettre ressemble à un 'D'."
+  ],
+  "continue_sur_page_suivante": true,
+  "_modele": "gemini-3.5-flash-lite"
+}

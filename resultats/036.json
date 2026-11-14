@@ -1,0 +1,47 @@
+{
+  "contenu": [
+    {
+      "type": "titre",
+      "texte": "Résolution"
+    },
+    {
+      "type": "schema",
+      "description": "Schéma représentant un plan rectangulaire divisé en plusieurs sections par des traits verticaux et horizontaux, avec des hachures sur le périmètre extérieur.",
+      "elements": [],
+      "cotes": [],
+      "hachures": [
+        {
+          "zone": "périmètre extérieur",
+          "couleur": "noir",
+          "etiquette": "hachures"
+        }
+      ],
+      "couleurs": [],
+      "annotations": []
+    },
+    {
+      "type": "paragraphe",
+      "texte": "Calculons la longueur développée des murs de soubassement."
+    },
+    {
+      "type": "calcul",
+      "lignes": [
+        "Lds = Ldh + Ldv",
+        "Ldh = 3 + 3 + 2,3 + 2,3 + 2,3",
+        "Ldh = 12,90 m",
+        "Ldv = 4,10 + 1,75 + 2,15 + 1,75 + 2,15",
+        "Ldv = 11,90 m",
+        "Lds = Ldh + Ldv",
+        "= 12,90 m + 11,90 m",
+        "Lds = 24,80 m"
+      ]
+    },
+    {
+      "type": "paragraphe",
+      "texte": "Pour calculer la Lds du mur avec les poteaux (porteurs ou non porteurs), il suffit de considérer la longueur horizontale et soustraire les poteaux ; ou encore, il suffit de considérer la longueur horizontale entre deux poteaux, ensuite considérer la longueur verticale et soustraire les poteaux ou il suffit de considérer la longueur verticale entre les poteaux."
+    }
+  ],
+  "alertes": [],
+  "continue_sur_page_suivante": false,
+  "_modele": "gemini-3.5-flash-lite"
+}

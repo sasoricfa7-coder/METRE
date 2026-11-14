@@ -1,0 +1,147 @@
+{
+  "contenu": [
+    {
+      "type": "titre",
+      "texte": "Calculons la longueur développée des murs en élévation"
+    },
+    {
+      "type": "calcul",
+      "lignes": [
+        "Lds = Ldh + Ldv",
+        "Ldh = 5,75 + 5,75 = 11,50 m",
+        "Ldv = 4,10 + 4,10 + 4,10 = 12,30 m",
+        "Lds = Ldh + Ldv",
+        "= 11,50 + 12,30",
+        "Lds = 23,80 m"
+      ]
+    },
+    {
+      "type": "titre",
+      "texte": "* Cas 2"
+    },
+    {
+      "type": "schema",
+      "description": "Plan schématique coté représentant la vue en plan d'un bâtiment composé de deux pièces séparées par un mur de refend, avec un angle arrondi sur le coin inférieur droit.",
+      "elements": [
+        {
+          "genre": "rectangle",
+          "role": "structure principale",
+          "largeur_cote": "4.45",
+          "hauteur_cote": "4.10"
+        },
+        {
+          "genre": "arc",
+          "rayon_cote": "",
+          "coin": "bas-droit"
+        }
+      ],
+      "cotes": [
+        {
+          "valeur": "3.00",
+          "mesure": "largeur intérieure de la pièce gauche",
+          "position": "haut"
+        },
+        {
+          "valeur": "2.30",
+          "mesure": "largeur intérieure de la pièce droite",
+          "position": "haut"
+        },
+        {
+          "valeur": "4.10",
+          "mesure": "hauteur intérieure de la pièce gauche",
+          "position": "gauche"
+        },
+        {
+          "valeur": "3.10",
+          "mesure": "hauteur intérieure droite (partie droite)",
+          "position": "droite"
+        },
+        {
+          "valeur": "1.20",
+          "mesure": "hauteur du coin arrondi",
+          "position": "droite"
+        },
+        {
+          "valeur": "4.45",
+          "mesure": "longueur intérieure totale au bas",
+          "position": "bas"
+        },
+        {
+          "valeur": "1.00",
+          "mesure": "rayon/cote du coin arrondi",
+          "position": "bas-droit"
+        },
+        {
+          "valeur": "15",
+          "mesure": "épaisseur des murs",
+          "position": "multiple"
+        }
+      ],
+      "hachures": [],
+      "couleurs": [],
+      "annotations": [
+        "15",
+        "3.00",
+        "15",
+        "2.30",
+        "15",
+        "4.10",
+        "3.10",
+        "1.20",
+        "4.45",
+        "100",
+        "15"
+      ]
+    },
+    {
+      "type": "paragraphe",
+      "texte": "Les murs en élévation sont réalisés en agglos creux de 15x20x40 cm."
+    },
+    {
+      "type": "paragraphe",
+      "texte": "Calculer la longueur développée des murs en élévation."
+    },
+    {
+      "type": "titre",
+      "texte": "Résolution"
+    },
+    {
+      "type": "schema",
+      "description": "Schéma de la vue en plan reprenant la structure avec les sections de murs hachurées et le coin arrondi surigné.",
+      "elements": [
+        {
+          "genre": "rectangle",
+          "role": "contour des murs avec hachures de section",
+          "largeur_cote": "",
+          "hauteur_cote": ""
+        },
+        {
+          "genre": "arc",
+          "rayon_cote": "1,075",
+          "coin": "bas-droit"
+        }
+      ],
+      "cotes": [],
+      "hachures": [
+        {
+          "zone": "murs extérieurs et mur de refend",
+          "couleur": "rouge",
+          "etiquette": ""
+        }
+      ],
+      "couleurs": [
+        "rouge pour les hachures des murs",
+        "jaune pour le secteur d'angle arrondi en bas à droite"
+      ],
+      "annotations": [
+        "R=1,075"
+      ]
+    }
+  ],
+  "alertes": [
+    "Dans le premier paragraphe du texte énoncé, 'en réalisés' a été corrigé en 'réalisés'.",
+    "Le nombre '34' apparaît tout en bas à droite de la page."
+  ],
+  "continue_sur_page_suivante": true,
+  "_modele": "gemini-3.6-flash"
+}

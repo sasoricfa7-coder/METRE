@@ -1,0 +1,146 @@
+{
+  "contenu": [
+    {
+      "type": "schema",
+      "description": "Plan d'une fondation mixte composée de 4 semelles isolées carrées disposées aux quatre coins, contenant chacune un poteau carré sombre, et reliées par des semelles filantes sur le périmètre.",
+      "elements": [
+        {
+          "genre": "rectangle",
+          "role": "semelle isolée",
+          "largeur_cote": "1.00",
+          "emplacement": "coin haut-gauche"
+        },
+        {
+          "genre": "rectangle",
+          "role": "semelle isolée",
+          "emplacement": "coin haut-droit"
+        },
+        {
+          "genre": "rectangle",
+          "role": "semelle isolée",
+          "emplacement": "coin bas-gauche"
+        },
+        {
+          "genre": "rectangle",
+          "role": "semelle isolée",
+          "emplacement": "coin bas-droit"
+        },
+        {
+          "genre": "rectangle",
+          "role": "poteau",
+          "emplacement": "dans chaque semelle isolée"
+        }
+      ],
+      "cotes": [
+        {
+          "valeur": "1.00",
+          "mesure": "largeur de la semelle isolée en haut à gauche",
+          "position": "haut"
+        },
+        {
+          "valeur": "20",
+          "mesure": "largeur du poteau/voile",
+          "position": "haut"
+        },
+        {
+          "valeur": "40",
+          "mesure": "largeur de la semelle filante",
+          "position": "haut"
+        },
+        {
+          "valeur": "2.65",
+          "mesure": "distance verticale entre semelles",
+          "position": "milieu"
+        },
+        {
+          "valeur": "2.40",
+          "mesure": "distance verticale intérieure",
+          "position": "milieu"
+        },
+        {
+          "valeur": "3.00",
+          "mesure": "distance horizontale entre axes/semelles",
+          "position": "milieu-droit"
+        },
+        {
+          "valeur": "2.80",
+          "mesure": "distance horizontale intérieure",
+          "position": "milieu-droit"
+        },
+        {
+          "valeur": "20",
+          "mesure": "largeur du poteau",
+          "position": "droite"
+        },
+        {
+          "valeur": "40",
+          "mesure": "largeur de la semelle",
+          "position": "droite"
+        },
+        {
+          "valeur": "20",
+          "mesure": "largeur de la semelle filante en bas",
+          "position": "bas"
+        },
+        {
+          "valeur": "40",
+          "mesure": "largeur de la semelle filante en bas",
+          "position": "bas"
+        }
+      ],
+      "hachures": [],
+      "couleurs": [
+        {
+          "couleur": "gris/noir",
+          "cible": "remplissage des 4 poteaux carrés"
+        }
+      ],
+      "annotations": [
+        "1.00",
+        "20",
+        "40",
+        "2.65",
+        "2.40",
+        "3.00",
+        "2.80",
+        "20",
+        "40"
+      ]
+    },
+    {
+      "type": "paragraphe",
+      "texte": "Soit la fondation mixte :"
+    },
+    {
+      "type": "paragraphe",
+      "texte": "1) Calculer le volume des fouilles pour semelles filantes."
+    },
+    {
+      "type": "paragraphe",
+      "texte": "2) Calculer le volume des fouilles pour semelles isolées."
+    },
+    {
+      "type": "paragraphe",
+      "texte": "3) En déduire le volume total."
+    },
+    {
+      "type": "titre",
+      "texte": "Données :"
+    },
+    {
+      "type": "paragraphe",
+      "texte": "* Semelles filantes : Largeur : 40 cm\nProfondeur : 50 cm"
+    },
+    {
+      "type": "paragraphe",
+      "texte": "* Semelles isolées : Section : 1 x 1 m\nProfondeur : 80 cm"
+    },
+    {
+      "type": "paragraphe",
+      "texte": "* Poteaux : 20 x 20 cm"
+    }
+  ],
+  "alertes": [],
+  "continue_sur_page_suivante": true,
+  "_modele": "gemini-3.6-flash"
+}

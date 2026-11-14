@@ -1,0 +1,88 @@
+{
+  "contenu": [
+    {
+      "type": "titre",
+      "texte": "Exercice 3"
+    },
+    {
+      "type": "schema",
+      "description": "Plan schématique représentant l'implantation de murs et semelles de fondation avec leurs lignes de cotes.",
+      "elements": [
+        {
+          "genre": "rectangle",
+          "role": "semelles et murs de fondation",
+          "largeur_cote": "",
+          "hauteur_cote": ""
+        }
+      ],
+      "cotes": [
+        {
+          "valeur": "20",
+          "mesure": "épaisseur de mur",
+          "position": "multiple"
+        },
+        {
+          "valeur": "40",
+          "mesure": "largeur de semelle",
+          "position": "multiple"
+        },
+        {
+          "valeur": "2,90",
+          "mesure": "dimension longitudinale",
+          "position": "centre-gauche"
+        },
+        {
+          "valeur": "2,80",
+          "mesure": "dimension longitudinale",
+          "position": "centre-droit"
+        },
+        {
+          "valeur": "1,20",
+          "mesure": "hauteur/largeur latérale",
+          "position": "gauche et droite"
+        }
+      ],
+      "hachures": [],
+      "couleurs": [],
+      "annotations": [
+        "20",
+        "40",
+        "2,90",
+        "2,80",
+        "1,20",
+        "2,02"
+      ]
+    },
+    {
+      "type": "paragraphe",
+      "texte": "Même énoncé que l'exercice 2."
+    },
+    {
+      "type": "titre",
+      "texte": "Solution :"
+    },
+    {
+      "type": "paragraphe",
+      "texte": "1) Calculons le volume des fouilles pour semelles filantes"
+    },
+    {
+      "type": "calcul",
+      "lignes": [
+        "Ldt = Ldu + Ldv",
+        "Ldu = 2,9 + 2,9",
+        "Ldu = 5,8 m",
+        "Ldv = 2,15 + 2,15",
+        "Ldv = 4,3 m",
+        "Ldt = Ldu + Ldv",
+        "= 5,8 + 4,3",
+        "Ldt = 10,1 m",
+        "V = Ldt x h x l",
+        "= 10,1 x 0,5 x 0,4",
+        "V = 2,02 m³"
+      ]
+    }
+  ],
+  "alertes": [],
+  "continue_sur_page_suivante": true,
+  "_modele": "gemini-3.6-flash"
+}

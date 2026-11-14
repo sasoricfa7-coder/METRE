@@ -1,0 +1,54 @@
+{
+  "contenu": [
+    {
+      "type": "paragraphe",
+      "texte": "1) Calculer la longueur développée du mur de soubassement d'épaisseur 20 cm."
+    },
+    {
+      "type": "paragraphe",
+      "texte": "2) Calculer la longueur développée du mur en élévation."
+    },
+    {
+      "type": "titre",
+      "texte": "Solution"
+    },
+    {
+      "type": "paragraphe",
+      "texte": "1) Calculons la longueur développée du mur de soubassement :"
+    },
+    {
+      "type": "calcul",
+      "lignes": [
+        "LdT = LdH + LdV + Larc",
+        "LdH = 1,45 + 1,45 + 1,45 + 2,85 + 1,975 = 9,275 m",
+        "LdV = 2,6 + 2,6 + 1,825 = 7,025 m",
+        "Larc = (2 * pi * R) / 4 = (2 * pi * 1,075) / 4 = 1,69 m",
+        "LdT = LdH + LdV + Larc",
+        "LdT = 9,275 + 7,025 + 1,69",
+        "LdT = 18 m"
+      ]
+    },
+    {
+      "type": "paragraphe",
+      "texte": "2) Calculons la longueur développée du mur en élévation :"
+    },
+    {
+      "type": "calcul",
+      "lignes": [
+        "LdT = LdH + LdV + Larc",
+        "LdH = 1,5 + 1,5 + 3,5 = 6,5 m",
+        "LdV = 2,7 + 2,7 + 1,85 = 7,25 m",
+        "Larc = 1,69 m",
+        "LdT = LdH + LdV + Larc",
+        "LdT = 6,5 + 7,25 + 1,69",
+        "LdT = 15,44 m"
+      ]
+    }
+  ],
+  "alertes": [
+    "Dans la deuxième ligne du calcul LdH pour le soubassement, le texte écrit est '1,03' mais il s'agit probablement d'une coquille manuscrite pour '1,45' au vu de l'alignement et de la formule en dessous, mais transcrit tel quel.",
+    "Dans le calcul LdH de l'élévation, la ligne manuscrite montre '4,5 + 1,5 + 3,5 = 6,5m' (le '4,5' semble être une correction d'un '1,5')."
+  ],
+  "continue_sur_page_suivante": false,
+  "_modele": "gemini-3.5-flash-lite"
+}

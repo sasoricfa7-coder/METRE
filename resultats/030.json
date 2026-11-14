@@ -1,0 +1,211 @@
+{
+  "contenu": [
+    {
+      "type": "schema",
+      "description": "Coupe transversale d'une fondation sur semelle filante (SF) sous un mur de soubassement.",
+      "elements": [
+        {
+          "genre": "rectangle",
+          "role": "mur de soubassement",
+          "largeur_cote": "20",
+          "hauteur_cote": "60"
+        },
+        {
+          "genre": "rectangle",
+          "role": "semelle filante",
+          "largeur_cote": "45",
+          "hauteur_cote": "20"
+        },
+        {
+          "genre": "rectangle",
+          "role": "béton de propreté",
+          "largeur_cote": "45",
+          "hauteur_cote": "5"
+        }
+      ],
+      "cotes": [
+        {
+          "valeur": "20",
+          "mesure": "hauteur supérieure de mur",
+          "position": "gauche"
+        },
+        {
+          "valeur": "20",
+          "mesure": "hauteur intermédiaire de mur",
+          "position": "gauche"
+        },
+        {
+          "valeur": "20",
+          "mesure": "hauteur inférieure de mur",
+          "position": "gauche"
+        },
+        {
+          "valeur": "20",
+          "mesure": "hauteur de la semelle",
+          "position": "gauche"
+        },
+        {
+          "valeur": "5",
+          "mesure": "hauteur du béton de propreté",
+          "position": "gauche"
+        },
+        {
+          "valeur": "12,5",
+          "mesure": "débord gauche de la semelle",
+          "position": "bas"
+        },
+        {
+          "valeur": "20",
+          "mesure": "épaisseur du mur",
+          "position": "bas"
+        },
+        {
+          "valeur": "12,5",
+          "mesure": "débord droit de la semelle",
+          "position": "bas"
+        },
+        {
+          "valeur": "45",
+          "mesure": "largeur totale de la semelle",
+          "position": "bas"
+        },
+        {
+          "valeur": "10",
+          "mesure": "hauteur du niveau supérieur",
+          "position": "droite"
+        },
+        {
+          "valeur": "30",
+          "mesure": "hauteur du niveau intermédiaire",
+          "position": "droite"
+        }
+      ],
+      "hachures": [
+        {
+          "zone": "mur de soubassement",
+          "couleur": "noir",
+          "etiquette": ""
+        }
+      ],
+      "couleurs": [],
+      "annotations": [
+        "SF",
+        "+ 40"
+      ]
+    },
+    {
+      "type": "schema",
+      "description": "Coupe transversale d'une semelle isolée (SI).",
+      "elements": [
+        {
+          "genre": "rectangle",
+          "role": "fût / mur",
+          "largeur_cote": "20",
+          "hauteur_cote": "60"
+        },
+        {
+          "genre": "rectangle",
+          "role": "semelle isolée",
+          "largeur_cote": "80",
+          "hauteur_cote": "40"
+        }
+      ],
+      "cotes": [
+        {
+          "valeur": "60",
+          "mesure": "hauteur du fût",
+          "position": "gauche"
+        },
+        {
+          "valeur": "25",
+          "mesure": "hauteur intermédiaire",
+          "position": "gauche"
+        },
+        {
+          "valeur": "15",
+          "mesure": "hauteur inférieure",
+          "position": "gauche"
+        },
+        {
+          "valeur": "30",
+          "mesure": "débord gauche",
+          "position": "bas"
+        },
+        {
+          "valeur": "20",
+          "mesure": "largeur centrale",
+          "position": "bas"
+        },
+        {
+          "valeur": "30",
+          "mesure": "débord droit",
+          "position": "bas"
+        },
+        {
+          "valeur": "80",
+          "mesure": "largeur totale de la semelle isolée",
+          "position": "bas"
+        },
+        {
+          "valeur": "10",
+          "mesure": "hauteur du niveau supérieur",
+          "position": "droite"
+        },
+        {
+          "valeur": "30",
+          "mesure": "hauteur intermédiaire droite",
+          "position": "droite"
+        },
+        {
+          "valeur": "80",
+          "mesure": "hauteur de la partie basse à droite",
+          "position": "droite"
+        }
+      ],
+      "hachures": [],
+      "couleurs": [],
+      "annotations": [
+        "SI",
+        "+ 40"
+      ]
+    },
+    {
+      "type": "paragraphe",
+      "texte": "26/11/2025"
+    },
+    {
+      "type": "titre",
+      "texte": "Solution"
+    },
+    {
+      "type": "paragraphe",
+      "texte": "1) Calculons le volume de remblai contre fondation des semelles filantes et isolées :"
+    },
+    {
+      "type": "paragraphe",
+      "texte": "- Semelles filantes :"
+    },
+    {
+      "type": "calcul",
+      "lignes": [
+        "V = LdT x l x h",
+        "LdT = LdH + LdV",
+        "LdH = 7,9 + 7,5",
+        "LdH = 15,4 m",
+        "LdV = 3,6 + 3,6 + 3,6",
+        "LdV = 10,8 m",
+        "LdT = 15,4 + 10,8",
+        "LdT = 26,2 m",
+        "V = LdT x l x h",
+        "= 26,2 x 0,2 x 0,2",
+        "V = 1,048 m³"
+      ]
+    }
+  ],
+  "alertes": [
+    "La date en marge à gauche indique '26/11/2025'.",
+    "Le calcul des semelles isolées annoncé dans le titre de la question 1) n'apparaît pas encore sur cette page et se poursuit sûrement sur la page suivante."
+  ],
+  "continue_sur_page_suivante": true,
+  "_modele": "gemini-3.6-flash"
+}

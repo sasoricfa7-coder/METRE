@@ -1,0 +1,59 @@
+{
+  "contenu": [
+    {
+      "type": "paragraphe",
+      "texte": "26/11/2025"
+    },
+    {
+      "type": "titre",
+      "texte": "Chapitre 2 : Les maçonneries"
+    },
+    {
+      "type": "titre",
+      "texte": "Définition"
+    },
+    {
+      "type": "paragraphe",
+      "texte": "La maçonnerie est un assemblage d'éléments (parpaings) liés entre eux par un mortier."
+    },
+    {
+      "type": "titre",
+      "texte": "I- Longueur développée"
+    },
+    {
+      "type": "titre",
+      "texte": "Définition"
+    },
+    {
+      "type": "paragraphe",
+      "texte": "La longueur développée d'un élément (murs) est le périmètre de cet élément. Elle consiste en quelque sorte à dérouler l'élément (murs) en question sur toute sa longueur."
+    },
+    {
+      "type": "titre",
+      "texte": "a) Calcul de la longueur développée du mur sans les poteaux (Porteurs ou non Porteurs)"
+    },
+    {
+      "type": "paragraphe",
+      "texte": "Pour calculer la Ldt du mur sans les poteaux (Porteurs ou non Porteurs), il suffit d'additionner la Ldh avec la Ldv, d'où la formule suivante : Ldt = Ldh + Ldv avec :"
+    },
+    {
+      "type": "calcul",
+      "lignes": [
+        "Ldt = Longueur développée totale",
+        "Ldh = Longueur développée horizontale",
+        "Ldv = Longueur développée verticale",
+        "Ldt = Ldh + Ldv + Larc"
+      ]
+    },
+    {
+      "type": "paragraphe",
+      "texte": "32"
+    }
+  ],
+  "alertes": [
+    "Date '26/11/2025' écrite dans la marge en haut à gauche.",
+    "Nombre '32' présent en bas à droite de la page."
+  ],
+  "continue_sur_page_suivante": false,
+  "_modele": "gemini-3.6-flash"
+}

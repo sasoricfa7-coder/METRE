@@ -1,0 +1,135 @@
+{
+  "contenu": [
+    {
+      "type": "calcul",
+      "lignes": [
+        "V = Ldt x l x h"
+      ]
+    },
+    {
+      "type": "paragraphe",
+      "texte": "Ldt : longueur développée totale des fouilles."
+    },
+    {
+      "type": "paragraphe",
+      "texte": "l : largeur de remblai"
+    },
+    {
+      "type": "paragraphe",
+      "texte": "h : hauteur de remblai"
+    },
+    {
+      "type": "paragraphe",
+      "texte": "• Pour les remblais d'apport intérieur, il se calcule de la manière suivante :"
+    },
+    {
+      "type": "calcul",
+      "lignes": [
+        "V = L x l x h"
+      ]
+    },
+    {
+      "type": "paragraphe",
+      "texte": "L : longueur intérieure de la pièce"
+    },
+    {
+      "type": "paragraphe",
+      "texte": "l : largeur intérieure de la pièce"
+    },
+    {
+      "type": "paragraphe",
+      "texte": "h : hauteur de remblai"
+    },
+    {
+      "type": "paragraphe",
+      "texte": "• Pour les semelles isolées, il se calcule de la façon suivante :"
+    },
+    {
+      "type": "calcul",
+      "lignes": [
+        "V = ((L x l) - (Section poteau)) x h x n avec"
+      ]
+    },
+    {
+      "type": "paragraphe",
+      "texte": "L : longueur de la fouille en semelle isolée"
+    },
+    {
+      "type": "paragraphe",
+      "texte": "l : largeur de la fouille en semelle isolée"
+    },
+    {
+      "type": "paragraphe",
+      "texte": "h : hauteur du remblai"
+    },
+    {
+      "type": "paragraphe",
+      "texte": "n : nombre de fouilles de semelle isolée"
+    },
+    {
+      "type": "titre",
+      "texte": "Exercice d'application"
+    },
+    {
+      "type": "schema",
+      "description": "Plan en vue de dessus d'une pièce rectangulaire indiquant l'épaisseur des murs périphériques, les dimensions intérieures et une porte au niveau du mur inférieur.",
+      "elements": [
+        {
+          "genre": "rectangle",
+          "role": "murs périphériques",
+          "largeur_cote": "4.00",
+          "hauteur_cote": "3.00"
+        },
+        {
+          "genre": "ouverture",
+          "sorte": "porte",
+          "mur": "bas",
+          "avec_arc": true
+        }
+      ],
+      "cotes": [
+        {
+          "valeur": "4.00",
+          "mesure": "longueur intérieure de la pièce",
+          "position": "centre-haut"
+        },
+        {
+          "valeur": "3.00",
+          "mesure": "largeur intérieure de la pièce",
+          "position": "centre-droit"
+        },
+        {
+          "valeur": "20",
+          "mesure": "épaisseur du mur gauche",
+          "position": "gauche"
+        },
+        {
+          "valeur": "20",
+          "mesure": "épaisseur du mur droit",
+          "position": "droite"
+        },
+        {
+          "valeur": "20",
+          "mesure": "épaisseur du mur haut",
+          "position": "haut"
+        },
+        {
+          "valeur": "20",
+          "mesure": "épaisseur du mur bas",
+          "position": "bas"
+        }
+      ],
+      "hachures": [],
+      "couleurs": [],
+      "annotations": [
+        "2/1"
+      ]
+    }
+  ],
+  "alertes": [
+    "Dans la formule 'V = ((L x l) - (Section poteau)) x h x n avec', le mot 'avec' apparaît juste après le rectangle encadrant la formule.",
+    "L'annotation '2/1' en bas à droite à l'extérieur du schéma correspond probablement à une numérotation de page ou une note de bas de page."
+  ],
+  "continue_sur_page_suivante": true,
+  "_modele": "gemini-3.6-flash"
+}
