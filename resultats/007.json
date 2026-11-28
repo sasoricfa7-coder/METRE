@@ -1,0 +1,215 @@
+{
+  "contenu": [
+    {
+      "type": "titre",
+      "texte": "Application 4"
+    },
+    {
+      "type": "schema",
+      "description": "Plan côté d'un bâtiment rectangulaire avec un pan coupé (chanfrein) dans l'angle inférieur droit, comprenant une porte et deux fenêtres.",
+      "elements": [
+        {
+          "genre": "rectangle",
+          "role": "murs extérieurs avec chanfrein au coin bas-droit"
+        },
+        {
+          "genre": "ouverture",
+          "sorte": "fenêtre",
+          "mur": "gauche"
+        },
+        {
+          "genre": "ouverture",
+          "sorte": "fenêtre",
+          "mur": "haut"
+        },
+        {
+          "genre": "ouverture",
+          "sorte": "porte",
+          "mur": "bas",
+          "avec_arc": true
+        }
+      ],
+      "cotes": [
+        {
+          "valeur": "15",
+          "mesure": "épaisseur mur gauche",
+          "position": "haut-gauche"
+        },
+        {
+          "valeur": "4.00",
+          "mesure": "longueur intérieure mur haut",
+          "position": "haut"
+        },
+        {
+          "valeur": "15",
+          "mesure": "épaisseur mur droit",
+          "position": "haut-droit"
+        },
+        {
+          "valeur": "2.15",
+          "mesure": "hauteur mur droit",
+          "position": "droite"
+        },
+        {
+          "valeur": "15",
+          "mesure": "épaisseur mur chanfrein/droit",
+          "position": "droite"
+        },
+        {
+          "valeur": "85",
+          "mesure": "largeur horizontale du chanfrein",
+          "position": "bas-droit"
+        },
+        {
+          "valeur": "3.15",
+          "mesure": "longueur mur bas",
+          "position": "bas"
+        },
+        {
+          "valeur": "15",
+          "mesure": "épaisseur mur gauche",
+          "position": "bas-gauche"
+        },
+        {
+          "valeur": "15",
+          "mesure": "épaisseur mur bas",
+          "position": "gauche-bas"
+        },
+        {
+          "valeur": "3.30",
+          "mesure": "hauteur intérieure mur gauche",
+          "position": "gauche"
+        },
+        {
+          "valeur": "15",
+          "mesure": "épaisseur mur haut",
+          "position": "gauche-haut"
+        }
+      ],
+      "hachures": [],
+      "couleurs": [],
+      "annotations": []
+    },
+    {
+      "type": "paragraphe",
+      "texte": "1) Calculer la surface de décapage en prévoyant 2 m de part et d'autre"
+    },
+    {
+      "type": "paragraphe",
+      "texte": "2) Calculer le volume de décapage : profondeur : 30 cm"
+    },
+    {
+      "type": "titre",
+      "texte": "Solution"
+    },
+    {
+      "type": "schema",
+      "description": "Schéma de l'emprise de décapage avec un déport de 2 m autour du bâtiment, faisant apparaître une surface hachurée au niveau de l'angle tronqué inférieur droit.",
+      "elements": [
+        {
+          "genre": "rectangle",
+          "role": "emprise totale de terrassement / décapage"
+        },
+        {
+          "genre": "rectangle",
+          "role": "contour du bâtiment avec pan coupé inférieur droit"
+        }
+      ],
+      "cotes": [
+        {
+          "valeur": "8,30",
+          "mesure": "largeur totale décapage",
+          "position": "haut"
+        },
+        {
+          "valeur": "4,30",
+          "mesure": "largeur totale du bâtiment",
+          "position": "haut intérieur"
+        },
+        {
+          "valeur": "7,30",
+          "mesure": "hauteur totale décapage",
+          "position": "gauche"
+        },
+        {
+          "valeur": "3,30",
+          "mesure": "hauteur totale du bâtiment",
+          "position": "gauche intérieur"
+        },
+        {
+          "valeur": "3,30",
+          "mesure": "longueur droite mur bas",
+          "position": "bas intérieur"
+        },
+        {
+          "valeur": "2",
+          "mesure": "déport de terrassement",
+          "position": "haut-gauche"
+        },
+        {
+          "valeur": "2",
+          "mesure": "déport de terrassement",
+          "position": "bas-gauche"
+        },
+        {
+          "valeur": "2",
+          "mesure": "déport de terrassement",
+          "position": "haut-droit"
+        },
+        {
+          "valeur": "2",
+          "mesure": "déport de terrassement",
+          "position": "droite"
+        },
+        {
+          "valeur": "2",
+          "mesure": "déport de terrassement",
+          "position": "bas-droit"
+        },
+        {
+          "valeur": "1 m",
+          "mesure": "largeur chanfrein bâtiment",
+          "position": "intérieur bas-droit"
+        },
+        {
+          "valeur": "1 m",
+          "mesure": "hauteur chanfrein bâtiment",
+          "position": "intérieur bas-droit"
+        },
+        {
+          "valeur": "1 m",
+          "mesure": "incertain",
+          "position": "droite bas"
+        },
+        {
+          "valeur": "1 m",
+          "mesure": "incertain",
+          "position": "bas droit"
+        }
+      ],
+      "hachures": [
+        {
+          "zone": "triangle/trapèze dans l'angle inférieur droit",
+          "couleur": "encre",
+          "etiquette": "SH"
+        }
+      ],
+      "couleurs": [],
+      "annotations": []
+    },
+    {
+      "type": "calcul",
+      "lignes": [
+        "1)",
+        "SD = ST - SH",
+        "ST = L x l = 8,30 x 7,30  ST = 60,59 m²"
+      ]
+    }
+  ],
+  "alertes": [
+    "Dans le second schéma, les cotes autour de la zone hachurée inférieure droite ('1 m' ou '1') comportent des pointages de délimitation ambigus.",
+    "Le mot tronqué en marge haute gauche '...anfrein' (vraisemblablement 'Chanfrein') a été ignoré conformément à la règle sur la marge."
+  ],
+  "continue_sur_page_suivante": true,
+  "_modele": "gemini-3.8-flash"
+}

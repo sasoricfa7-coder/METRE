@@ -1,0 +1,31 @@
+{
+  "contenu": [
+    {
+      "type": "titre",
+      "texte": "Programme de métré BEP"
+    },
+    {
+      "type": "paragraphe",
+      "texte": "Chapitre I : Les terrassements"
+    },
+    {
+      "type": "paragraphe",
+      "texte": "Chapitre II : Les fondations"
+    },
+    {
+      "type": "paragraphe",
+      "texte": "Chapitre III : Les maçonneries"
+    },
+    {
+      "type": "paragraphe",
+      "texte": "Chapitre IV : Les ouvrages en BA"
+    },
+    {
+      "type": "paragraphe",
+      "texte": "Chapitre V : Étude des cas : Villas types F2 ; F3 ; F4"
+    }
+  ],
+  "alertes": [],
+  "continue_sur_page_suivante": false,
+  "_modele": "gemini-3.6-flash"
+}

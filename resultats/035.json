@@ -1,0 +1,112 @@
+{
+  "contenu": [
+    {
+      "type": "paragraphe",
+      "texte": "Équivalences de la longueur du soubassement dans le cas d'un mur en élévation"
+    },
+    {
+      "type": "calcul",
+      "lignes": [
+        "LdT = LdH + LdV + Larc",
+        "LdH = 2 x 3,15 + 4,05 = 10,35 m",
+        "LdV = 4 x 2,00 + 1,90 + 1,90 = 11,80 m",
+        "Larc = 4 x (3,14 x 0,175 / 2) = 1,085 m",
+        "LdT = LdH + LdV + Larc",
+        "LdT = 10,35 + 11,80 + 1,085",
+        "LdT = 23,235 m."
+      ]
+    },
+    {
+      "type": "titre",
+      "texte": "2) Calcul de la longueur développée du mur avec les poteaux / porteurs"
+    },
+    {
+      "type": "titre",
+      "texte": "Exercice d'application"
+    },
+    {
+      "type": "titre",
+      "texte": "* Cas 1"
+    },
+    {
+      "type": "schema",
+      "description": "Vue en plan d'un mur de soubassement en agglomérés avec des poteaux et un refend transversal, avec cotations verticales et horizontales.",
+      "elements": [
+        {
+          "genre": "rectangle",
+          "role": "mur extérieur principal",
+          "largeur_cote": "3,60 et 2,50",
+          "hauteur_cote": "3,65 et 1,75"
+        },
+        {
+          "genre": "rectangle",
+          "role": "refend transversal",
+          "largeur_cote": "2,50",
+          "hauteur_cote": "0,20"
+        }
+      ],
+      "cotes": [
+        {
+          "valeur": "0,20",
+          "mesure": "épaisseur du mur supérieur",
+          "position": "gauche"
+        },
+        {
+          "valeur": "3,65",
+          "mesure": "hauteur de la première pièce",
+          "position": "gauche"
+        },
+        {
+          "valeur": "0,20",
+          "mesure": "épaisseur du mur intermédiaire",
+          "position": "gauche"
+        },
+        {
+          "valeur": "1,75",
+          "mesure": "hauteur de la deuxième pièce",
+          "position": "gauche"
+        },
+        {
+          "valeur": "0,20",
+          "mesure": "épaisseur du mur inférieur",
+          "position": "gauche"
+        },
+        {
+          "valeur": "3,60",
+          "mesure": "largeur de la travée de gauche",
+          "position": "interne"
+        },
+        {
+          "valeur": "2,50",
+          "mesure": "largeur de la travée de droite",
+          "position": "interne"
+        }
+      ],
+      "hachures": [],
+      "couleurs": [],
+      "annotations": [
+        "20",
+        "3,65",
+        "20",
+        "1,75",
+        "20",
+        "3,60",
+        "2,50"
+      ]
+    },
+    {
+      "type": "paragraphe",
+      "texte": "Les murs en agglos sont réalisés en agglos pleins de 20x20x40 cm"
+    },
+    {
+      "type": "paragraphe",
+      "texte": "- Calculer la longueur développée du mur de soubassement."
+    }
+  ],
+  "alertes": [
+    "Le haut de la page est partiellement flou et surexposé, rendant la transcription exacte de la formule Larc incertaine.",
+    "Le numéro de page 35 en bas à droite a été ignoré conformément aux consignes."
+  ],
+  "continue_sur_page_suivante": true,
+  "_modele": "gemini-3.6-flash"
+}

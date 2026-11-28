@@ -1,0 +1,77 @@
+{
+  "contenu": [
+    {
+      "type": "titre",
+      "texte": "Exercice 1"
+    },
+    {
+      "type": "schema",
+      "description": "Deux vues en plan de semelles isolées carrées avec un petit rectangle central représentant le poteau.",
+      "elements": [
+        {
+          "genre": "rectangle",
+          "role": "semelle isolée gauche",
+          "largeur_cote": "80cm",
+          "hauteur_cote": "80cm"
+        },
+        {
+          "genre": "rectangle",
+          "role": "semelle isolée droite",
+          "largeur_cote": "80cm",
+          "hauteur_cote": "80cm"
+        }
+      ],
+      "cotes": [
+        {
+          "valeur": "80cm",
+          "mesure": "hauteur de la semelle gauche",
+          "position": "gauche"
+        },
+        {
+          "valeur": "80cm",
+          "mesure": "largeur de la semelle gauche",
+          "position": "bas"
+        },
+        {
+          "valeur": "80cm",
+          "mesure": "hauteur de la semelle droite",
+          "position": "gauche"
+        },
+        {
+          "valeur": "80cm",
+          "mesure": "largeur de la semelle droite",
+          "position": "bas"
+        }
+      ],
+      "hachures": [],
+      "couleurs": [],
+      "annotations": []
+    },
+    {
+      "type": "paragraphe",
+      "texte": "1) Calculer le volume des fouilles pour semelles isolées avec profondeur h = 1 m."
+    },
+    {
+      "type": "titre",
+      "texte": "Solution"
+    },
+    {
+      "type": "calcul",
+      "lignes": [
+        "1)",
+        "V = (L x l) x h x m",
+        "= 0,8 x 0,8 x 1 x 2",
+        "V = 1,28 m³"
+      ]
+    },
+    {
+      "type": "titre",
+      "texte": "Exercice 2"
+    }
+  ],
+  "alertes": [
+    "Dans la formule V = (L x l) x h x m, la dernière lettre ressemble à 'm' (désignant le nombre de semelles)."
+  ],
+  "continue_sur_page_suivante": true,
+  "_modele": "gemini-3.6-flash"
+}

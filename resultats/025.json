@@ -1,0 +1,153 @@
+{
+  "contenu": [
+    {
+      "type": "titre",
+      "texte": "Solution"
+    },
+    {
+      "type": "calcul",
+      "lignes": [
+        "V = L x l x h",
+        "= (4,95 x 2,95) + (2,950 x 1,975) + (1,975 x 0,975)",
+        "+ π x (0,975)² / 4 x 0,5",
+        "V = 12,55 m³"
+      ]
+    },
+    {
+      "type": "titre",
+      "texte": "b) Volume de remblai contre fondation ou remblai des cavités ou vides de fouilles."
+    },
+    {
+      "type": "titre",
+      "texte": "b.1) Pour semelle filante"
+    },
+    {
+      "type": "paragraphe",
+      "texte": "Exercice d'application :"
+    },
+    {
+      "type": "paragraphe",
+      "texte": "Considérons le schéma ci-dessous :"
+    },
+    {
+      "type": "schema",
+      "description": "Plan d'un bâtiment composé de deux pièces délimitées par des murs en maçonnerie, séparées par un mur de refend avec une porte, comprenant une fenêtre en partie haute, une porte extérieure en partie basse et un angle inférieur droit arrondi.",
+      "elements": [
+        {
+          "genre": "rectangle",
+          "role": "pièce gauche",
+          "largeur_cote": "5.00",
+          "hauteur_cote": "3.00"
+        },
+        {
+          "genre": "rectangle",
+          "role": "pièce droite",
+          "largeur_cote": "3.00"
+        },
+        {
+          "genre": "ouverture",
+          "sorte": "porte",
+          "mur": "intérieur",
+          "avec_arc": true
+        },
+        {
+          "genre": "ouverture",
+          "sorte": "porte",
+          "mur": "bas",
+          "avec_arc": true
+        },
+        {
+          "genre": "ouverture",
+          "sorte": "fenêtre",
+          "mur": "haut"
+        },
+        {
+          "genre": "arc",
+          "rayon_cote": "R = 1,00",
+          "coin": "bas-droit"
+        }
+      ],
+      "cotes": [
+        {
+          "valeur": "15",
+          "mesure": "épaisseur du mur gauche",
+          "position": "gauche"
+        },
+        {
+          "valeur": "5.00",
+          "mesure": "largeur intérieure de la pièce gauche",
+          "position": "intérieur"
+        },
+        {
+          "valeur": "3.00",
+          "mesure": "hauteur intérieure de la pièce gauche",
+          "position": "intérieur"
+        },
+        {
+          "valeur": "15",
+          "mesure": "épaisseur du mur de refend en haut",
+          "position": "haut"
+        },
+        {
+          "valeur": "15",
+          "mesure": "épaisseur du mur de refend au centre",
+          "position": "centre"
+        },
+        {
+          "valeur": "15",
+          "mesure": "épaisseur du mur de refend en bas",
+          "position": "bas"
+        },
+        {
+          "valeur": "3.00",
+          "mesure": "largeur intérieure de la pièce droite",
+          "position": "intérieur"
+        },
+        {
+          "valeur": "15",
+          "mesure": "épaisseur du mur droit",
+          "position": "droite"
+        },
+        {
+          "valeur": "15",
+          "mesure": "épaisseur du mur supérieur droit",
+          "position": "haut droit"
+        },
+        {
+          "valeur": "2.00",
+          "mesure": "hauteur de la partie supérieure du mur droit",
+          "position": "droite"
+        },
+        {
+          "valeur": "1.00",
+          "mesure": "hauteur de la partie inférieure droite avant l'arrondi",
+          "position": "droite"
+        },
+        {
+          "valeur": "15",
+          "mesure": "épaisseur du mur inférieur droit",
+          "position": "bas droit"
+        },
+        {
+          "valeur": "R = 1,00",
+          "mesure": "rayon de courbure de l'angle arrondi",
+          "position": "bas-droit"
+        }
+      ],
+      "hachures": [],
+      "couleurs": [],
+      "annotations": []
+    },
+    {
+      "type": "paragraphe",
+      "texte": "L'ouvrage est entièrement réalisé sur des semelles filantes qui sont logées dans des"
+    }
+  ],
+  "alertes": [
+    "Dans le calcul de V, à la 2e ligne, l'expression (1,95 x 0,975) a été raturée et corrigée au-dessus par (1,975 x 0,975).",
+    "Le terme avec π est écrit sous forme de fraction manuscrite avec le numérateur π x (0,975)² et le dénominateur 4, suivi de x 0,5.",
+    "La dernière phrase est interrompue en bas de page."
+  ],
+  "continue_sur_page_suivante": true,
+  "_modele": "gemini-3.8-flash"
+}

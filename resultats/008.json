@@ -1,0 +1,132 @@
+{
+  "contenu": [
+    {
+      "type": "calcul",
+      "lignes": [
+        "S_H = B x h / 2",
+        "= 3 x 3 / 2",
+        "S_H = 4,5 m²",
+        "S_D = S_T - S_H",
+        "= 60,59 - 4,5",
+        "S_D = 56,09 m²"
+      ]
+    },
+    {
+      "type": "paragraphe",
+      "texte": "2)"
+    },
+    {
+      "type": "calcul",
+      "lignes": [
+        "V = S_D x h",
+        "= 36,09 x 0,3",
+        "V = 16,82 m³"
+      ]
+    },
+    {
+      "type": "schema",
+      "description": "Plan schématique d'une pièce vue de dessus, présentant un coin supérieur gauche arrondi, un coin inférieur droit chanfreiné, une ouverture de fenêtre sur le mur supérieur et une porte sur le mur inférieur, accompagnés des cotes.",
+      "elements": [
+        {
+          "genre": "arc",
+          "rayon_cote": "85",
+          "coin": "haut-gauche"
+        },
+        {
+          "genre": "ouverture",
+          "sorte": "fenêtre",
+          "mur": "haut"
+        },
+        {
+          "genre": "ouverture",
+          "sorte": "porte",
+          "mur": "bas",
+          "avec_arc": true
+        },
+        {
+          "genre": "triangle",
+          "emplacement": "coin bas-droit"
+        }
+      ],
+      "cotes": [
+        {
+          "valeur": "15",
+          "mesure": "épaisseur de mur / segment d'angle",
+          "position": "haut"
+        },
+        {
+          "valeur": "85",
+          "mesure": "largeur du coin arrondi",
+          "position": "haut"
+        },
+        {
+          "valeur": "3,15",
+          "mesure": "longueur de la section centrale du mur haut",
+          "position": "haut"
+        },
+        {
+          "valeur": "15",
+          "mesure": "épaisseur de mur",
+          "position": "haut"
+        },
+        {
+          "valeur": "15",
+          "mesure": "épaisseur de mur",
+          "position": "gauche"
+        },
+        {
+          "valeur": "2,30",
+          "mesure": "hauteur de la section centrale du mur gauche",
+          "position": "gauche"
+        },
+        {
+          "valeur": "15",
+          "mesure": "épaisseur de mur",
+          "position": "gauche"
+        },
+        {
+          "valeur": "15",
+          "mesure": "épaisseur de mur",
+          "position": "droite"
+        },
+        {
+          "valeur": "2,15",
+          "mesure": "hauteur de la section centrale du mur droit",
+          "position": "droite"
+        },
+        {
+          "valeur": "15",
+          "mesure": "épaisseur de mur",
+          "position": "droite"
+        },
+        {
+          "valeur": "15",
+          "mesure": "épaisseur de mur",
+          "position": "bas"
+        },
+        {
+          "valeur": "3,15",
+          "mesure": "longueur de la section centrale du mur bas",
+          "position": "bas"
+        },
+        {
+          "valeur": "85",
+          "mesure": "largeur du pan coupé",
+          "position": "bas"
+        }
+      ],
+      "hachures": [],
+      "couleurs": [],
+      "annotations": [
+        "r",
+        "R = 85",
+        "Solution"
+      ]
+    }
+  ],
+  "alertes": [
+    "Sur la ligne '= 36,09 x 0,3', le premier chiffre du nombre 36,09 ressemble à un 3 mais pourrait être un 5 mal formé."
+  ],
+  "continue_sur_page_suivante": false,
+  "_modele": "gemini-3.6-flash"
+}

@@ -1,0 +1,107 @@
+{
+  "contenu": [
+    {
+      "type": "calcul",
+      "lignes": [
+        "V = LdT x l x h"
+      ]
+    },
+    {
+      "type": "paragraphe",
+      "texte": "LdT : longueur développée totale des fouilles.\nl : largeur de remblai\nh : hauteur de remblai"
+    },
+    {
+      "type": "paragraphe",
+      "texte": "• Pour les remblais d'apport intérieur, il se calcule de la manière suivante :"
+    },
+    {
+      "type": "calcul",
+      "lignes": [
+        "V = L x l x h"
+      ]
+    },
+    {
+      "type": "paragraphe",
+      "texte": "L : longueur intérieure de la pièce\nl : largeur intérieure de la pièce\nh : hauteur de remblai"
+    },
+    {
+      "type": "paragraphe",
+      "texte": "• Pour les semelles isolées, il se calcule de la façon suivante :"
+    },
+    {
+      "type": "calcul",
+      "lignes": [
+        "V = (L x l) - (Section poteau) x h x n avec"
+      ]
+    },
+    {
+      "type": "paragraphe",
+      "texte": "L : longueur de la fouille en semelle isolée\nl : largeur de la fouille en semelle isolée\nh : hauteur du remblai\nn : nombre de fouille de semelle isolée"
+    },
+    {
+      "type": "titre",
+      "texte": "Exercice d'application"
+    },
+    {
+      "type": "schema",
+      "description": "Plan schématique d'une pièce rectangulaire avec murs périphériques et une porte battante sur la façade inférieure.",
+      "elements": [
+        {
+          "genre": "rectangle",
+          "role": "murs intérieurs de la pièce",
+          "largeur_cote": "4.00",
+          "hauteur_cote": "3.00"
+        },
+        {
+          "genre": "ouverture",
+          "sorte": "porte",
+          "mur": "bas",
+          "avec_arc": true
+        }
+      ],
+      "cotes": [
+        {
+          "valeur": "4.00",
+          "mesure": "longueur intérieure de la pièce",
+          "position": "centre horizontal"
+        },
+        {
+          "valeur": "3.00",
+          "mesure": "largeur intérieure de la pièce",
+          "position": "centre vertical"
+        },
+        {
+          "valeur": "20",
+          "mesure": "épaisseur du mur supérieur",
+          "position": "haut"
+        },
+        {
+          "valeur": "20",
+          "mesure": "épaisseur du mur inférieur",
+          "position": "bas"
+        },
+        {
+          "valeur": "20",
+          "mesure": "épaisseur du mur gauche",
+          "position": "gauche"
+        },
+        {
+          "valeur": "20",
+          "mesure": "épaisseur du mur droit",
+          "position": "droite"
+        }
+      ],
+      "hachures": [],
+      "couleurs": [],
+      "annotations": [
+        "2 / 1"
+      ]
+    }
+  ],
+  "alertes": [
+    "Dans la formule des semelles isolées, les parenthèses globales autour de la surface nette ne sont pas tracées, la ligne se termine par 'avec' en dehors du cadre.",
+    "L'inscription '2 / 1' ou similaire en bas à droite sous le schéma est d'origine et de signification incertaines."
+  ],
+  "continue_sur_page_suivante": true,
+  "_modele": "gemini-3.8-flash"
+}

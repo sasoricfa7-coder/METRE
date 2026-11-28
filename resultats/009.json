@@ -1,0 +1,127 @@
+{
+  "contenu": [
+    {
+      "type": "schema",
+      "description": "Plan côté d'une surface rectangulaire de 6.30 sur 5.30 avec deux angles retranchés : l'angle supérieur gauche arrondi avec une zone hachurée notée SH1, et l'angle inférieur droit coupé en diagonale avec une zone triangulaire hachurée notée SH2. Un tracé intérieur parallèle avec des flèches cotées 1 apparaît également.",
+      "elements": [
+        {
+          "genre": "rectangle",
+          "role": "contour principal",
+          "largeur_cote": "6.30",
+          "hauteur_cote": "5.30"
+        },
+        {
+          "genre": "arc",
+          "role": "arrondi de l'angle supérieur gauche",
+          "coin": "haut-gauche"
+        },
+        {
+          "genre": "triangle",
+          "role": "pan coupé de l'angle inférieur droit",
+          "emplacement": "coin bas-droit"
+        }
+      ],
+      "cotes": [
+        {
+          "valeur": "6.30",
+          "mesure": "longueur totale extérieure",
+          "position": "haut"
+        },
+        {
+          "valeur": "4.30",
+          "mesure": "longueur de la partie droite du bord supérieur",
+          "position": "haut"
+        },
+        {
+          "valeur": "5.30",
+          "mesure": "largeur totale extérieure",
+          "position": "gauche"
+        },
+        {
+          "valeur": "3.30",
+          "mesure": "largeur de la partie inférieure du bord gauche",
+          "position": "gauche"
+        },
+        {
+          "valeur": "1",
+          "mesure": "déport vertical dans l'angle supérieur droit",
+          "position": "haut-droit"
+        },
+        {
+          "valeur": "1",
+          "mesure": "déport horizontal dans l'angle supérieur droit",
+          "position": "haut-droit"
+        },
+        {
+          "valeur": "incertain",
+          "mesure": "flèches de déport dans l'angle inférieur gauche",
+          "position": "bas-gauche"
+        }
+      ],
+      "hachures": [
+        {
+          "zone": "coin supérieur gauche extérieur à l'arc",
+          "couleur": "encre normale",
+          "etiquette": "SH1"
+        },
+        {
+          "zone": "coin inférieur droit extérieur au pan coupé",
+          "couleur": "encre normale",
+          "etiquette": "SH2"
+        }
+      ],
+      "couleurs": [],
+      "annotations": [
+        "décaissement",
+        "h = 30 cm",
+        "SH1",
+        "SH2"
+      ]
+    },
+    {
+      "type": "calcul",
+      "lignes": [
+        "1)",
+        "SD = ST - SH1 - SH2",
+        "ST = L x l",
+        "= 6.30 x 5.30",
+        "ST = 33.39 m²",
+        "SH2 = b x h / 2",
+        "= 2 x 2 / 2",
+        "SH2 = 2 m²"
+      ]
+    },
+    {
+      "type": "calcul",
+      "lignes": [
+        "SH1 = c x c - (π R² / 4)",
+        "= 2 x 2 - π 2² / 4",
+        "= 4 - π . 4 / 4",
+        "SH1 = 0,86 m²"
+      ]
+    },
+    {
+      "type": "calcul",
+      "lignes": [
+        "SD = ST - SH1 - SH2",
+        "= 33.39 - 0,86 - 2",
+        "SD = 30,53 m²"
+      ]
+    },
+    {
+      "type": "calcul",
+      "lignes": [
+        "2)",
+        "V = SD x h",
+        "= 30,53 x 0,3",
+        "V = 9,159 m³"
+      ]
+    }
+  ],
+  "alertes": [
+    "Le mot situé au-dessus de 'h = 30 cm' est transcrit 'décaissement' d'après le contexte et les lettres visibles, bien que l'écriture manuscrite soit serrée.",
+    "Les cotes de valeur '1' et les flèches situées dans les coins supérieur droit et inférieur gauche du schéma intérieur sont de lecture délicate."
+  ],
+  "continue_sur_page_suivante": false,
+  "_modele": "gemini-3.8-flash"
+}

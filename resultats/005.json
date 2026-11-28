@@ -1,0 +1,127 @@
+{
+  "contenu": [
+    {
+      "type": "calcul",
+      "lignes": [
+        "SD = ST - SH",
+        "ST = L x l",
+        "= 9 x 7",
+        "ST = 63 m²"
+      ]
+    },
+    {
+      "type": "calcul",
+      "lignes": [
+        "SH = Séc = (pi x r²) / 4",
+        "= (2 x 3) - ((pi x 3²) / 4)",
+        "= 9 - ((pi x 9) / 4)",
+        "SH = 1,93 m²"
+      ]
+    },
+    {
+      "type": "calcul",
+      "lignes": [
+        "SD = ST - SH",
+        "= 63 - 1,93",
+        "SD = 61,07 m²"
+      ]
+    },
+    {
+      "type": "paragraphe",
+      "texte": "2) Calculons le volume"
+    },
+    {
+      "type": "calcul",
+      "lignes": [
+        "V = SD x h",
+        "= 61,07 x 0,35",
+        "V = 21,37 m³"
+      ]
+    },
+    {
+      "type": "titre",
+      "texte": "Application 3"
+    },
+    {
+      "type": "schema",
+      "description": "Plan architectural d'un bâtiment rectangulaire avec une extension ou un décroché, comportant des cotes et des ouvertures de portes ou fenêtres.",
+      "elements": [
+        {
+          "genre": "rectangle",
+          "role": "bâtiment principal",
+          "largeur_cote": "4.55",
+          "hauteur_cote": "3.46"
+        }
+      ],
+      "cotes": [
+        {
+          "valeur": "4,55",
+          "mesure": "longueur totale du mur du haut",
+          "position": "haut"
+        },
+        {
+          "valeur": "0,20",
+          "mesure": "épaisseur ou décalage à gauche du haut",
+          "position": "haut"
+        },
+        {
+          "valeur": "0,20",
+          "mesure": "épaisseur ou décalage à droite du haut",
+          "position": "haut"
+        },
+        {
+          "valeur": "3,46",
+          "mesure": "hauteur totale du mur de gauche",
+          "position": "gauche"
+        },
+        {
+          "valeur": "0,20",
+          "mesure": "décalage en bas à gauche",
+          "position": "bas"
+        },
+        {
+          "valeur": "2,35",
+          "mesure": "longueur partielle en bas",
+          "position": "bas"
+        },
+        {
+          "valeur": "0,20",
+          "mesure": "décalage en bas au milieu",
+          "position": "bas"
+        },
+        {
+          "valeur": "1,50",
+          "mesure": "longueur partielle en bas à droite",
+          "position": "bas"
+        },
+        {
+          "valeur": "0,20",
+          "mesure": "décalage en bas à droite",
+          "position": "bas"
+        },
+        {
+          "valeur": "2,00",
+          "mesure": "hauteur partie droite",
+          "position": "droit"
+        },
+        {
+          "valeur": "0,25",
+          "mesure": "décalage en bas à droite",
+          "position": "droit"
+        }
+      ],
+      "hachures": [],
+      "couleurs": [],
+      "annotations": []
+    },
+    {
+      "type": "paragraphe",
+      "texte": "1) Calculer la surface de décapage en prévoyant 1,5 m de part et d'autre"
+    }
+  ],
+  "alertes": [
+    "Le symbole pi est écrit graphiquement sous forme de lettre grecque ou approximation dans le premier bloc de calcul."
+  ],
+  "continue_sur_page_suivante": true,
+  "_modele": "gemini-3.5-flash-lite"
+}

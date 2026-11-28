@@ -1,0 +1,107 @@
+{
+  "contenu": [
+    {
+      "type": "titre",
+      "texte": "Résolution"
+    },
+    {
+      "type": "paragraphe",
+      "texte": "1) Calculons la surface de décapage avec 1,75 m de débordement de part et d'autre des murs extérieurs :"
+    },
+    {
+      "type": "schema",
+      "description": "Vue en plan montrant le rectangle intérieur du bâtiment hachuré et le rectangle extérieur correspondant à la zone de décapage avec débordement.",
+      "elements": [
+        {
+          "genre": "rectangle",
+          "role": "zone de décapage extérieure",
+          "largeur_cote": "9.80",
+          "hauteur_cote": "8.80"
+        },
+        {
+          "genre": "rectangle",
+          "role": "emprise du bâtiment",
+          "largeur_cote": "6.30",
+          "hauteur_cote": "5.30"
+        }
+      ],
+      "cotes": [
+        {
+          "valeur": "9.80",
+          "mesure": "largeur totale extérieure",
+          "position": "haut"
+        },
+        {
+          "valeur": "8.80",
+          "mesure": "hauteur totale extérieure",
+          "position": "gauche"
+        },
+        {
+          "valeur": "6.30",
+          "mesure": "largeur intérieure",
+          "position": "haut"
+        },
+        {
+          "valeur": "6.30",
+          "mesure": "largeur intérieure",
+          "position": "bas"
+        },
+        {
+          "valeur": "5.30",
+          "mesure": "hauteur intérieure",
+          "position": "droite"
+        },
+        {
+          "valeur": "5.30",
+          "mesure": "hauteur intérieure",
+          "position": "gauche"
+        },
+        {
+          "valeur": "1.75",
+          "mesure": "largeur de débordement",
+          "position": "périphérie"
+        }
+      ],
+      "hachures": [
+        {
+          "zone": "rectangle intérieur du bâtiment",
+          "couleur": "rouge",
+          "etiquette": ""
+        }
+      ],
+      "couleurs": [
+        "rouge (tracés du schéma, cotes et hachures)"
+      ],
+      "annotations": [
+        "9.80",
+        "6.30",
+        "1.75",
+        "8.80",
+        "5.30"
+      ]
+    },
+    {
+      "type": "calcul",
+      "lignes": [
+        "S = L x l",
+        "= 9.80 x 8.80",
+        "S = 86,24 m²"
+      ]
+    },
+    {
+      "type": "paragraphe",
+      "texte": "2) Volume"
+    },
+    {
+      "type": "calcul",
+      "lignes": [
+        "V = S x h",
+        "= 86,24 x 0,35",
+        "V = 30,184 m³"
+      ]
+    }
+  ],
+  "alertes": [],
+  "continue_sur_page_suivante": false,
+  "_modele": "gemini-3.6-flash"
+}

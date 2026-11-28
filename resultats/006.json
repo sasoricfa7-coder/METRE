@@ -1,0 +1,136 @@
+{
+  "contenu": [
+    {
+      "type": "titre",
+      "texte": "2) Calculer le volume de décapage"
+    },
+    {
+      "type": "paragraphe",
+      "texte": "profondeur : h = 40 cm"
+    },
+    {
+      "type": "titre",
+      "texte": "Solution"
+    },
+    {
+      "type": "schema",
+      "description": "Plan rectangulaire d'un terrain/bâtiment subdivisé en plusieurs zones, avec les dimensions globales et intérieures. La zone en bas à droite est hachurée et identifiée comme SH.",
+      "elements": [
+        {
+          "genre": "rectangle",
+          "role": "contour principal",
+          "largeur_cote": "7,45",
+          "hauteur_cote": "6,45"
+        },
+        {
+          "genre": "rectangle",
+          "role": "zone hachurée",
+          "emplacement": "coin bas-droit"
+        }
+      ],
+      "cotes": [
+        {
+          "valeur": "7,45",
+          "mesure": "largeur totale",
+          "position": "haut"
+        },
+        {
+          "valeur": "6,45",
+          "mesure": "hauteur totale",
+          "position": "gauche"
+        },
+        {
+          "valeur": "5,45",
+          "mesure": "hauteur intérieure gauche",
+          "position": "gauche"
+        },
+        {
+          "valeur": "0,5",
+          "mesure": "hauteur sous zone gauche",
+          "position": "gauche"
+        },
+        {
+          "valeur": "0,75",
+          "mesure": "largeur centrale",
+          "position": "centre-bas"
+        },
+        {
+          "valeur": "3,05",
+          "mesure": "hauteur intérieure droite",
+          "position": "centre-droit"
+        },
+        {
+          "valeur": "1,70",
+          "mesure": "largeur zone droite",
+          "position": "droit"
+        },
+        {
+          "valeur": "1,05",
+          "mesure": "largeur/hauteur zone droite",
+          "position": "droit"
+        },
+        {
+          "valeur": "1,5",
+          "mesure": "largeur sous zone centrale",
+          "position": "centre-bas"
+        }
+      ],
+      "hachures": [
+        {
+          "zone": "rectangle bas-droit",
+          "couleur": "encre normale",
+          "etiquette": "SH"
+        }
+      ],
+      "couleurs": [],
+      "annotations": [
+        "7,45",
+        "6,45",
+        "5,45",
+        "0,5",
+        "0,75",
+        "3,05",
+        "1,70",
+        "1,05",
+        "1,5",
+        "SH"
+      ]
+    },
+    {
+      "type": "titre",
+      "texte": "1) Calculons SD"
+    },
+    {
+      "type": "calcul",
+      "lignes": [
+        "SD = ST - SH",
+        "ST = 7,45 x 6,45",
+        "ST = 48,051 m²",
+        "SH = L x l",
+        "= 1,70 x 1,05",
+        "SH = 1,785 m²",
+        "SD = ST - SH",
+        "= 48,051 - 1,785",
+        "SD = 46,265 m²"
+      ]
+    },
+    {
+      "type": "titre",
+      "texte": "2) Calculons V"
+    },
+    {
+      "type": "calcul",
+      "lignes": [
+        "V = SD x h",
+        "= 46,265 x 0,40",
+        "V = 18,506 m³"
+      ]
+    }
+  ],
+  "alertes": [
+    "La notation 'SD' (Surface Décapée) ou 'Sb' est légèrement ambiguë dans le premier titre de section, retranscrite 'SD' d'après la suite des calculs.",
+    "Dans la ligne 'ST = 48,051 m²', le chiffre '1' après 48,05 paraît être une surcharge ou une valeur arrondie/écrite '48,051'."
+  ],
+  "continue_sur_page_suivante": false,
+  "_modele": "gemini-3.6-flash"
+}

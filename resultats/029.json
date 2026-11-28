@@ -1,0 +1,152 @@
+{
+  "contenu": [
+    {
+      "type": "schema",
+      "description": "Coupe schématique d'un potelet et de sa semelle avec cotes de hauteur et largeur, montrant le sol remblayé de chaque côté.",
+      "elements": [
+        {
+          "genre": "rectangle",
+          "role": "potelet et semelle de fondation",
+          "largeur_cote": "1 m",
+          "hauteur_cote": "1,15 m"
+        }
+      ],
+      "cotes": [
+        {
+          "valeur": "1,15 m",
+          "mesure": "hauteur totale (h) du potelet",
+          "position": "haut-droit"
+        },
+        {
+          "valeur": "1 m",
+          "mesure": "largeur de la semelle",
+          "position": "bas"
+        },
+        {
+          "valeur": "0,25",
+          "mesure": "épaisseur de la semelle",
+          "position": "gauche"
+        },
+        {
+          "valeur": "h0",
+          "mesure": "hauteur intermédiaire",
+          "position": "gauche"
+        },
+        {
+          "valeur": "h.m.",
+          "mesure": "hauteur de remblai",
+          "position": "droite"
+        }
+      ],
+      "hachures": [],
+      "couleurs": [],
+      "annotations": [
+        "potelet h = 1,15 m"
+      ]
+    },
+    {
+      "type": "calcul",
+      "lignes": [
+        "V = (L x l x h) m",
+        "= (1 x 1) - (0,2 x 0,2) x 0,70",
+        "V = 0,972 m³"
+      ]
+    },
+    {
+      "type": "titre",
+      "texte": "Exercice de synthèse"
+    },
+    {
+      "type": "schema",
+      "description": "Vue en plan / élévation d'une structure de bâtiment avec poteaux, poutres, semelles isolées (S1) et filantes (B1).",
+      "elements": [
+        {
+          "genre": "rectangle",
+          "role": "semelles isolées S1",
+          "emplacement": "base des poteaux"
+        },
+        {
+          "genre": "rectangle",
+          "role": "poutres / semelles filantes B1",
+          "emplacement": "liaisons horizontales"
+        }
+      ],
+      "cotes": [
+        {
+          "valeur": "B1",
+          "mesure": "section ou désignation de poutre",
+          "position": "haut"
+        },
+        {
+          "valeur": "20",
+          "mesure": "épaisseur / largeur de poteau",
+          "position": "centre"
+        },
+        {
+          "valeur": "4,45",
+          "mesure": "portée intérieure gauche",
+          "position": "centre-gauche"
+        },
+        {
+          "valeur": "3,45",
+          "mesure": "portée intérieure droite",
+          "position": "centre-droit"
+        },
+        {
+          "valeur": "3.30",
+          "mesure": "dimension verticale",
+          "position": "centre"
+        },
+        {
+          "valeur": "4,25",
+          "mesure": "entre-axe / dimension inférieure gauche",
+          "position": "centre-gauche"
+        },
+        {
+          "valeur": "3,25",
+          "mesure": "entre-axe / dimension inférieure droite",
+          "position": "centre-droit"
+        },
+        {
+          "valeur": "10",
+          "mesure": "dimension de mur ou poteau",
+          "position": "gauche, centre, droite"
+        },
+        {
+          "valeur": "20",
+          "mesure": "largeur poteau",
+          "position": "gauche, centre, droite"
+        },
+        {
+          "valeur": "S1",
+          "mesure": "désignation de la semelle isolée gauche",
+          "position": "bas-gauche"
+        },
+        {
+          "valeur": "B1",
+          "mesure": "désignation de la semelle filante / poutre droite",
+          "position": "bas-droit"
+        }
+      ],
+      "hachures": [],
+      "couleurs": [],
+      "annotations": [
+        "Donnée : S1 = 80 x 80 x 25 cm",
+        "B1 = 45 x 20 cm"
+      ]
+    },
+    {
+      "type": "paragraphe",
+      "texte": "1) Calculer le volume de remblai contre fondation des semelles isolées et filantes."
+    },
+    {
+      "type": "paragraphe",
+      "texte": "2) Calculer le volume de remblai sous dallage."
+    }
+  ],
+  "alertes": [
+    "Dans les données sous le deuxième schéma, la valeur '45 x 20 cm' pour B1 présente un premier chiffre peu lisible (hésitation entre 45, 15 ou 45)."
+  ],
+  "continue_sur_page_suivante": true,
+  "_modele": "gemini-3.6-flash"
+}
