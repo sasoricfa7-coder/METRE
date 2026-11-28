@@ -16,15 +16,18 @@ PROMPT = """Tu transcris une page scannée d'un cahier de cours de BEP (bâtimen
 
 RÈGLES
 1. Transcris fidèlement TOUT le contenu, dans l'ordre de lecture.
-2. Ignore les lignes et la marge du cahier : elles ne font pas partie du contenu.
-3. Corrige l'orthographe, la grammaire et la ponctuation du texte rédigé.
-4. Recopie les numéros et puces (1), 2), I-, etc.) exactement comme écrits. Si un doute existe, signale-le dans "alertes".
-5. Ne modifie JAMAIS un chiffre, une unité, une formule ou un résultat de calcul : recopie-les tels qu'écrits.
-6. Si un calcul te semble faux, signale-le dans "alertes" sans le corriger.
-7. Si un mot ou un chiffre est illisible, écris [illisible] et signale-le dans "alertes".
-8. Pour chaque schéma, ne dessine rien et n'interprète rien : décris seulement ce qui est dessiné et écrit. Si un sens est incertain, signale-le dans "alertes".
-9. "couleurs" : uniquement les couleurs utilisées dans le dessin lui-même (hachures, remplissages, traits colorés) avec ce qu'elles colorent. Liste vide si le dessin est à l'encre normale. Ne mentionne jamais l'encre du texte ni le papier.
-10. Indique si le contenu continue sur la page suivante (énoncé coupé, solution annoncée mais absente, etc.).
+2. Ignore les lignes et la marge du cahier : elles ne font pas partie du contenu. Ignore aussi les dates en marge et les numéros de page.
+3. Corrige uniquement l'orthographe, la grammaire et la ponctuation du texte rédigé (mots). Ne corrige jamais ce qui est un symbole, une abréviation ou une notation technique.
+4. Recopie les numéros et puces (1), 2), I-, a), etc.) EXACTEMENT comme écrits, sans les harmoniser. Si un doute existe, signale-le dans "alertes".
+5. Ne modifie JAMAIS un chiffre, une unité, une formule ou un résultat de calcul : recopie-les tels qu'écrits, y compris le séparateur décimal (virgule ou point) tel qu'il apparaît.
+6. N'AJOUTE JAMAIS de parenthèses, crochets, signes ou espaces qui ne sont pas dans le cahier. Si la formule n'a pas de parenthèses, tu n'en écris pas.
+7. Recopie les notations techniques lettre par lettre, avec leurs indices et exposants (SD, SH, ST, LdT, LdH, LdV, Larc, B1, b2, m, n, etc.). Ne remplace jamais une lettre par une autre qui te semble plus logique. Si deux lectures sont possibles, écris celle que tu vois et signale le doute dans "alertes".
+8. N'effectue AUCUN calcul. Ne vérifie pas l'arithmétique. N'écris jamais d'alerte du type "le résultat devrait être...". Les alertes servent UNIQUEMENT à signaler une lecture incertaine (écriture ambiguë, scan flou, passage illisible, numérotation douteuse).
+9. Si un mot ou un chiffre est illisible, écris [illisible] à sa place et signale-le dans "alertes". N'invente jamais un contenu pour combler un trou.
+10. Pour chaque schéma, ne dessine rien et n'interprète rien : décris seulement ce qui est dessiné et écrit. Dans "cotes" et "elements", ne mets QUE les valeurs réellement écrites sur le dessin, jamais une valeur déduite ou calculée. Si tu ne sais pas à quoi une cote se rapporte, mets "mesure": "incertain" et signale-le dans "alertes".
+11. "couleurs" : uniquement les couleurs utilisées dans le dessin lui-même (hachures, remplissages, traits colorés) avec ce qu'elles colorent. Liste vide si le dessin est à l'encre normale. Ne mentionne jamais l'encre du texte ni le papier.
+12. Si la page est floue ou en grande partie illisible, ne devine pas : transcris ce qui est lisible et signale-le dans "alertes".
+13. Indique si le contenu continue sur la page suivante (énoncé coupé, solution annoncée mais absente, etc.).
 
 Réponds uniquement en JSON, avec cette structure :
 {
